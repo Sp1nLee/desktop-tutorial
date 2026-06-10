@@ -1,0 +1,350 @@
+{
+  "_meta": {
+    "reportType": "prediction_review",
+    "generatedAt": "2026-06-03T15:40:52.839771+08:00",
+    "autoUpdateApplied": true,
+    "totalPredicted": 104,
+    "reviewedCount": 104,
+    "stableCount": 101,
+    "minorChangeCount": 3,
+    "significantChangeCount": 0,
+    "requiresAttentionCount": 0,
+    "dataSnapshot": {
+      "teamsUpdated": "2026-06-03",
+      "oddsUpdated": "2026-06-03",
+      "h2hUpdated": "2026-06-03",
+      "predictionsGenerated": "2026-06-03",
+      "staleDays": 0,
+      "isStale": false
+    }
+  },
+  "summary": {},
+  "changes": [
+    {
+      "matchId": "A1",
+      "homeTeam": "MEX",
+      "awayTeam": "RSA",
+      "date": "2026-06-11",
+      "group": "A",
+      "severity": "minor",
+      "requiresReview": false,
+      "flags": [
+        "主队Elo变化+30（无实质影响）"
+      ],
+      "current": {
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "probabilities": {
+          "homeWin": 0.5774,
+          "draw": 0.2207,
+          "awayWin": 0.201,
+          "over25": 0.5635,
+          "under25": 0.4365
+        },
+        "expectedGoals": {
+          "home": 1.91,
+          "away": 1.03
+        },
+        "inputs": {
+          "compositeHome": 56,
+          "compositeAway": 35,
+          "eloHome": 1880,
+          "eloAway": 1720,
+          "h2hAvailable": true,
+          "h2hMatches": 4,
+          "styleMatchup": "被克制"
+        }
+      },
+      "previous": {
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "probabilities": {
+          "homeWin": 0.5481,
+          "draw": 0.2272,
+          "awayWin": 0.224,
+          "over25": 0.5637,
+          "under25": 0.4363
+        },
+        "expectedGoals": {
+          "home": 1.85,
+          "away": 1.1
+        },
+        "inputs": {
+          "compositeHome": 55,
+          "compositeAway": 35,
+          "eloHome": 1850,
+          "eloAway": 1720,
+          "h2hAvailable": true,
+          "h2hMatches": 4,
+          "styleMatchup": "被克制"
+        }
+      },
+      "deltas": {
+        "scoreHome": 0,
+        "scoreAway": 0,
+        "homeWinProb": 0.0293,
+        "drawProb": 0.0065,
+        "awayWinProb": 0.023,
+        "compositeHome": 1,
+        "compositeAway": 0,
+        "eloHome": 30
+      }
+    },
+    {
+      "matchId": "A4",
+      "homeTeam": "MEX",
+      "awayTeam": "KOR",
+      "date": "2026-06-18",
+      "group": "A",
+      "severity": "minor",
+      "requiresReview": false,
+      "flags": [
+        "主队Elo变化+30（无实质影响）"
+      ],
+      "current": {
+        "predictedScore": {
+          "home": 1,
+          "away": 0
+        },
+        "probabilities": {
+          "homeWin": 0.5907,
+          "draw": 0.2251,
+          "awayWin": 0.1836,
+          "over25": 0.5197,
+          "under25": 0.4803
+        },
+        "expectedGoals": {
+          "home": 1.84,
+          "away": 0.92
+        },
+        "inputs": {
+          "compositeHome": 58,
+          "compositeAway": 43,
+          "eloHome": 1880,
+          "eloAway": 1810,
+          "h2hAvailable": true,
+          "h2hMatches": 8,
+          "styleMatchup": "克制"
+        }
+      },
+      "previous": {
+        "predictedScore": {
+          "home": 1,
+          "away": 0
+        },
+        "probabilities": {
+          "homeWin": 0.5569,
+          "draw": 0.2334,
+          "awayWin": 0.2092,
+          "over25": 0.5198,
+          "under25": 0.4802
+        },
+        "expectedGoals": {
+          "home": 1.77,
+          "away": 0.99
+        },
+        "inputs": {
+          "compositeHome": 57,
+          "compositeAway": 43,
+          "eloHome": 1850,
+          "eloAway": 1810,
+          "h2hAvailable": true,
+          "h2hMatches": 8,
+          "styleMatchup": "克制"
+        }
+      },
+      "deltas": {
+        "scoreHome": 0,
+        "scoreAway": 0,
+        "homeWinProb": 0.0338,
+        "drawProb": 0.0083,
+        "awayWinProb": 0.0256,
+        "compositeHome": 1,
+        "compositeAway": 0,
+        "eloHome": 30
+      }
+    },
+    {
+      "matchId": "A5",
+      "homeTeam": "CZE",
+      "awayTeam": "MEX",
+      "date": "2026-06-24",
+      "group": "A",
+      "severity": "minor",
+      "requiresReview": false,
+      "flags": [
+        "客队Elo变化+30（无实质影响）"
+      ],
+      "current": {
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "probabilities": {
+          "homeWin": 0.3595,
+          "draw": 0.2639,
+          "awayWin": 0.3766,
+          "over25": 0.4814,
+          "under25": 0.5186
+        },
+        "expectedGoals": {
+          "home": 1.28,
+          "away": 1.32
+        },
+        "inputs": {
+          "compositeHome": 46,
+          "compositeAway": 53,
+          "eloHome": 1795,
+          "eloAway": 1880,
+          "h2hAvailable": false,
+          "h2hMatches": 0,
+          "styleMatchup": "克制"
+        }
+      },
+      "previous": {
+        "predictedScore": {
+          "home": 1,
+          "away": 1
+        },
+        "probabilities": {
+          "homeWin": 0.3932,
+          "draw": 0.2635,
+          "awayWin": 0.3433,
+          "over25": 0.4814,
+          "under25": 0.5186
+        },
+        "expectedGoals": {
+          "home": 1.35,
+          "away": 1.25
+        },
+        "inputs": {
+          "compositeHome": 46,
+          "compositeAway": 52,
+          "eloHome": 1795,
+          "eloAway": 1850,
+          "h2hAvailable": false,
+          "h2hMatches": 0,
+          "styleMatchup": "克制"
+        }
+      },
+      "deltas": {
+        "scoreHome": 0,
+        "scoreAway": 0,
+        "homeWinProb": 0.0337,
+        "drawProb": 0.0004,
+        "awayWinProb": 0.0333,
+        "compositeHome": 0,
+        "compositeAway": 1,
+        "eloAway": 30
+      }
+    }
+  ],
+  "stable": [
+    "A2",
+    "A3",
+    "A6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "R32-1",
+    "R32-2",
+    "R32-3",
+    "R32-4",
+    "R32-5",
+    "R32-6",
+    "R32-7",
+    "R32-8",
+    "R32-9",
+    "R32-10",
+    "R32-11",
+    "R32-12",
+    "R32-13",
+    "R32-14",
+    "R32-15",
+    "R32-16",
+    "R16-1",
+    "R16-2",
+    "R16-3",
+    "R16-4",
+    "R16-5",
+    "R16-6",
+    "R16-7",
+    "R16-8",
+    "QF-1",
+    "QF-2",
+    "QF-3",
+    "QF-4",
+    "SF-1",
+    "SF-2",
+    "3RD",
+    "FINAL"
+  ],
+  "requiresAttention": []
+}

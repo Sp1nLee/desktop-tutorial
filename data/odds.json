@@ -1,0 +1,363 @@
+{
+  "_meta": {
+    "description": "2026世界杯赔率数据",
+    "updated": "2026-06-10",
+    "sources": [
+      "DraftKings",
+      "FanDuel",
+      "台湾运彩",
+      "Australian Bookmakers"
+    ],
+    "note": "赔率为美式赔率(+)/小数赔率，隐含概率基于多家均值"
+  },
+  "winner": {
+    "ESP": {
+      "usOdds": "+475",
+      "decimalOdds": 5.5,
+      "impliedProb": 0.182
+    },
+    "FRA": {
+      "usOdds": "+500",
+      "decimalOdds": 6.0,
+      "impliedProb": 0.167
+    },
+    "ENG": {
+      "usOdds": "+650",
+      "decimalOdds": 8.0,
+      "impliedProb": 0.125
+    },
+    "BRA": {
+      "usOdds": "+800",
+      "decimalOdds": 9.0,
+      "impliedProb": 0.111
+    },
+    "ARG": {
+      "usOdds": "+900",
+      "decimalOdds": 9.0,
+      "impliedProb": 0.111
+    },
+    "POR": {
+      "usOdds": "+1000",
+      "decimalOdds": 12.0,
+      "impliedProb": 0.083
+    },
+    "GER": {
+      "usOdds": "+1400",
+      "decimalOdds": 13.0,
+      "impliedProb": 0.077
+    },
+    "NED": {
+      "usOdds": "+2000",
+      "decimalOdds": 21.0,
+      "impliedProb": 0.048
+    },
+    "NOR": {
+      "usOdds": "+3000",
+      "decimalOdds": 26.0,
+      "impliedProb": 0.038
+    },
+    "BEL": {
+      "usOdds": "+3500",
+      "decimalOdds": 34.0,
+      "impliedProb": 0.029
+    },
+    "COL": {
+      "usOdds": "+4000",
+      "decimalOdds": 41.0,
+      "impliedProb": 0.024
+    },
+    "MAR": {
+      "usOdds": "+5000",
+      "decimalOdds": 51.0,
+      "impliedProb": 0.02
+    },
+    "USA": {
+      "usOdds": "+6000",
+      "decimalOdds": 61.0,
+      "impliedProb": 0.016
+    },
+    "JPN": {
+      "usOdds": "+6500",
+      "decimalOdds": 66.0,
+      "impliedProb": 0.015
+    },
+    "SUI": {
+      "usOdds": "+6500",
+      "decimalOdds": 66.0,
+      "impliedProb": 0.015
+    },
+    "URU": {
+      "usOdds": "+6500",
+      "decimalOdds": 66.0,
+      "impliedProb": 0.015
+    },
+    "MEX": {
+      "usOdds": "+8000",
+      "decimalOdds": 81.0,
+      "impliedProb": 0.012
+    },
+    "ECU": {
+      "usOdds": "+8000",
+      "decimalOdds": 81.0,
+      "impliedProb": 0.012
+    },
+    "CRO": {
+      "usOdds": "+8000",
+      "decimalOdds": 81.0,
+      "impliedProb": 0.012
+    },
+    "SEN": {
+      "usOdds": "+9000",
+      "decimalOdds": 91.0,
+      "impliedProb": 0.011
+    },
+    "TUR": {
+      "usOdds": "+10000",
+      "decimalOdds": 101.0,
+      "impliedProb": 0.01
+    },
+    "SWE": {
+      "usOdds": "+10000",
+      "decimalOdds": 101.0,
+      "impliedProb": 0.01
+    },
+    "AUT": {
+      "usOdds": "+15000",
+      "decimalOdds": 151.0,
+      "impliedProb": 0.007
+    },
+    "CAN": {
+      "usOdds": "+20000",
+      "decimalOdds": 201.0,
+      "impliedProb": 0.005
+    },
+    "SCO": {
+      "usOdds": "+20000",
+      "decimalOdds": 201.0,
+      "impliedProb": 0.005
+    },
+    "CZE": {
+      "usOdds": "+25000",
+      "decimalOdds": 251.0,
+      "impliedProb": 0.004
+    },
+    "CIV": {
+      "usOdds": "+25000",
+      "decimalOdds": 251.0,
+      "impliedProb": 0.004
+    },
+    "EGY": {
+      "usOdds": "+30000",
+      "decimalOdds": 301.0,
+      "impliedProb": 0.003
+    },
+    "GHA": {
+      "usOdds": "+30000",
+      "decimalOdds": 301.0,
+      "impliedProb": 0.003
+    },
+    "PAR": {
+      "usOdds": "+30000",
+      "decimalOdds": 301.0,
+      "impliedProb": 0.003
+    },
+    "ALG": {
+      "usOdds": "+35000",
+      "decimalOdds": 351.0,
+      "impliedProb": 0.003
+    },
+    "KOR": {
+      "usOdds": "+40000",
+      "decimalOdds": 401.0,
+      "impliedProb": 0.002
+    },
+    "BIH": {
+      "usOdds": "+50000",
+      "decimalOdds": 501.0,
+      "impliedProb": 0.002
+    },
+    "AUS": {
+      "usOdds": "+60000",
+      "decimalOdds": 601.0,
+      "impliedProb": 0.002
+    },
+    "TUN": {
+      "usOdds": "+70000",
+      "decimalOdds": 701.0,
+      "impliedProb": 0.001
+    },
+    "IRN": {
+      "usOdds": "+70000",
+      "decimalOdds": 701.0,
+      "impliedProb": 0.001
+    },
+    "RSA": {
+      "usOdds": "+100000",
+      "decimalOdds": 1001.0,
+      "impliedProb": 0.001
+    },
+    "KSA": {
+      "usOdds": "+100000",
+      "decimalOdds": 1001.0,
+      "impliedProb": 0.001
+    },
+    "PAN": {
+      "usOdds": "+100000",
+      "decimalOdds": 1001.0,
+      "impliedProb": 0.001
+    },
+    "CPV": {
+      "usOdds": "+100000",
+      "decimalOdds": 1001.0,
+      "impliedProb": 0.001
+    },
+    "COD": {
+      "usOdds": "+100000",
+      "decimalOdds": 1001.0,
+      "impliedProb": 0.001
+    },
+    "QAT": {
+      "usOdds": "+150000",
+      "decimalOdds": 1501.0,
+      "impliedProb": 0.001
+    },
+    "IRQ": {
+      "usOdds": "+150000",
+      "decimalOdds": 1501.0,
+      "impliedProb": 0.001
+    },
+    "NZL": {
+      "usOdds": "+150000",
+      "decimalOdds": 1501.0,
+      "impliedProb": 0.001
+    },
+    "UZB": {
+      "usOdds": "+150000",
+      "decimalOdds": 1501.0,
+      "impliedProb": 0.001
+    },
+    "CUW": {
+      "usOdds": "+250000",
+      "decimalOdds": 2501.0,
+      "impliedProb": 0.0
+    },
+    "JOR": {
+      "usOdds": "+250000",
+      "decimalOdds": 2501.0,
+      "impliedProb": 0.0
+    },
+    "HAI": {
+      "usOdds": "+250000",
+      "decimalOdds": 2501.0,
+      "impliedProb": 0.0
+    }
+  },
+  "groupWinner": {
+    "A": {
+      "MEX": 2.0,
+      "CZE": 3.6,
+      "KOR": 3.9,
+      "RSA": 15.0
+    },
+    "B": {
+      "SUI": 1.91,
+      "CAN": 3.6,
+      "BIH": 3.7,
+      "QAT": 36.0
+    },
+    "C": {
+      "BRA": 1.34,
+      "MAR": 5.5,
+      "SCO": 8.0,
+      "HAI": 101.0
+    },
+    "D": {
+      "USA": 1.63,
+      "TUR": 4.0,
+      "PAR": 6.0,
+      "AUS": 4.5
+    },
+    "E": {
+      "GER": 1.45,
+      "ECU": 4.8,
+      "CIV": 7.0,
+      "CUW": 46.0
+    },
+    "F": {
+      "NED": 1.71,
+      "JPN": 4.4,
+      "SWE": 5.3,
+      "TUN": 11.0
+    },
+    "G": {
+      "BEL": 1.45,
+      "EGY": 4.9,
+      "IRN": 8.0,
+      "NZL": 20.0
+    },
+    "H": {
+      "ESP": 1.22,
+      "URU": 6.0,
+      "KSA": 23.0,
+      "CPV": 71.0
+    },
+    "I": {
+      "FRA": 1.57,
+      "NOR": 3.5,
+      "SEN": 8.0,
+      "IRQ": 31.0
+    },
+    "J": {
+      "ARG": 1.34,
+      "AUT": 6.0,
+      "ALG": 7.5,
+      "JOR": 51.0
+    },
+    "K": {
+      "POR": 1.48,
+      "COL": 3.6,
+      "COD": 11.0,
+      "UZB": 36.0
+    },
+    "L": {
+      "ENG": 1.45,
+      "CRO": 4.4,
+      "GHA": 8.0,
+      "PAN": 46.0
+    }
+  },
+  "goldenBoot": {
+    "Kylian Mbappé (FRA)": {
+      "odds": "+600",
+      "impliedProb": 0.143
+    },
+    "Harry Kane (ENG)": {
+      "odds": "+700",
+      "impliedProb": 0.125
+    },
+    "Erling Haaland (NOR)": {
+      "odds": "+800",
+      "impliedProb": 0.111
+    },
+    "Lionel Messi (ARG)": {
+      "odds": "+1200",
+      "impliedProb": 0.077
+    },
+    "Vinicius Jr (BRA)": {
+      "odds": "+1600",
+      "impliedProb": 0.059
+    },
+    "Lamine Yamal (ESP)": {
+      "odds": "+1800",
+      "impliedProb": 0.053
+    },
+    "Cristiano Ronaldo (POR)": {
+      "odds": "+2000",
+      "impliedProb": 0.048
+    },
+    "Jude Bellingham (ENG)": {
+      "odds": "+2500",
+      "impliedProb": 0.038
+    }
+  }
+}

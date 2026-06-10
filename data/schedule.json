@@ -1,0 +1,1054 @@
+{
+  "_meta": {
+    "description": "2026世界杯完整赛程 - 104场比赛",
+    "updated": "2026-06-10",
+    "source": "FIFA官方赛程",
+    "timezone": "ET (美东时间)",
+    "phases": {
+      "group": "小组赛 6月11日-27日 (72场)",
+      "round32": "1/16决赛 6月28日-7月3日 (16场)",
+      "round16": "1/8决赛 7月4日-7日 (8场)",
+      "quarter": "1/4决赛 7月9日-11日 (4场)",
+      "semi": "半决赛 7月14日-15日 (2场)",
+      "bronze": "季军赛 7月18日 (1场)",
+      "final": "决赛 7月19日 (1场)"
+    }
+  },
+  "matches": [
+    {
+      "id": "A1",
+      "group": "A",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "15:00",
+      "venue": "Estadio Azteca, 墨西哥城",
+      "home": "MEX",
+      "away": "RSA",
+      "status": "upcoming"
+    },
+    {
+      "id": "A2",
+      "group": "A",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-11",
+      "time": "22:00",
+      "venue": "Estadio Akron, 瓜达拉哈拉",
+      "home": "KOR",
+      "away": "CZE",
+      "status": "upcoming"
+    },
+    {
+      "id": "A3",
+      "group": "A",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "12:00",
+      "venue": "Mercedes-Benz Stadium, 亚特兰大",
+      "home": "CZE",
+      "away": "RSA",
+      "status": "upcoming"
+    },
+    {
+      "id": "A4",
+      "group": "A",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "21:00",
+      "venue": "Estadio Akron, 瓜达拉哈拉",
+      "home": "MEX",
+      "away": "KOR",
+      "status": "upcoming"
+    },
+    {
+      "id": "A5",
+      "group": "A",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "21:00",
+      "venue": "Estadio Azteca, 墨西哥城",
+      "home": "CZE",
+      "away": "MEX",
+      "status": "upcoming"
+    },
+    {
+      "id": "A6",
+      "group": "A",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "21:00",
+      "venue": "Estadio BBVA, 蒙特雷",
+      "home": "RSA",
+      "away": "KOR",
+      "status": "upcoming"
+    },
+    {
+      "id": "B1",
+      "group": "B",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "15:00",
+      "venue": "BMO Field, 多伦多",
+      "home": "CAN",
+      "away": "BIH",
+      "status": "upcoming"
+    },
+    {
+      "id": "B2",
+      "group": "B",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "15:00",
+      "venue": "Levi's Stadium, 旧金山湾区",
+      "home": "QAT",
+      "away": "SUI",
+      "status": "upcoming"
+    },
+    {
+      "id": "B3",
+      "group": "B",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "15:00",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "home": "SUI",
+      "away": "BIH",
+      "status": "upcoming"
+    },
+    {
+      "id": "B4",
+      "group": "B",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-18",
+      "time": "18:00",
+      "venue": "BC Place, 温哥华",
+      "home": "CAN",
+      "away": "QAT",
+      "status": "upcoming"
+    },
+    {
+      "id": "B5",
+      "group": "B",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "15:00",
+      "venue": "BC Place, 温哥华",
+      "home": "SUI",
+      "away": "CAN",
+      "status": "upcoming"
+    },
+    {
+      "id": "B6",
+      "group": "B",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "15:00",
+      "venue": "Lumen Field, 西雅图",
+      "home": "BIH",
+      "away": "QAT",
+      "status": "upcoming"
+    },
+    {
+      "id": "C1",
+      "group": "C",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "18:00",
+      "venue": "MetLife Stadium, 纽约/新泽西",
+      "home": "BRA",
+      "away": "MAR",
+      "status": "upcoming"
+    },
+    {
+      "id": "C2",
+      "group": "C",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-13",
+      "time": "21:00",
+      "venue": "Gillette Stadium, 波士顿",
+      "home": "HAI",
+      "away": "SCO",
+      "status": "upcoming"
+    },
+    {
+      "id": "C3",
+      "group": "C",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "18:00",
+      "venue": "Gillette Stadium, 波士顿",
+      "home": "SCO",
+      "away": "MAR",
+      "status": "upcoming"
+    },
+    {
+      "id": "C4",
+      "group": "C",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "21:00",
+      "venue": "Lincoln Financial Field, 费城",
+      "home": "BRA",
+      "away": "HAI",
+      "status": "upcoming"
+    },
+    {
+      "id": "C5",
+      "group": "C",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "venue": "Hard Rock Stadium, 迈阿密",
+      "home": "SCO",
+      "away": "BRA",
+      "status": "upcoming"
+    },
+    {
+      "id": "C6",
+      "group": "C",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-24",
+      "time": "18:00",
+      "venue": "Mercedes-Benz Stadium, 亚特兰大",
+      "home": "MAR",
+      "away": "HAI",
+      "status": "upcoming"
+    },
+    {
+      "id": "D1",
+      "group": "D",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-12",
+      "time": "21:00",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "home": "USA",
+      "away": "PAR",
+      "status": "upcoming"
+    },
+    {
+      "id": "D2",
+      "group": "D",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "00:00",
+      "venue": "BC Place, 温哥华",
+      "home": "AUS",
+      "away": "TUR",
+      "status": "upcoming"
+    },
+    {
+      "id": "D3",
+      "group": "D",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-19",
+      "time": "15:00",
+      "venue": "Lumen Field, 西雅图",
+      "home": "USA",
+      "away": "AUS",
+      "status": "upcoming"
+    },
+    {
+      "id": "D4",
+      "group": "D",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "00:00",
+      "venue": "Levi's Stadium, 旧金山湾区",
+      "home": "TUR",
+      "away": "PAR",
+      "status": "upcoming"
+    },
+    {
+      "id": "D5",
+      "group": "D",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "22:00",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "home": "TUR",
+      "away": "USA",
+      "status": "upcoming"
+    },
+    {
+      "id": "D6",
+      "group": "D",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "22:00",
+      "venue": "Levi's Stadium, 旧金山湾区",
+      "home": "PAR",
+      "away": "AUS",
+      "status": "upcoming"
+    },
+    {
+      "id": "E1",
+      "group": "E",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "13:00",
+      "venue": "NRG Stadium, 休斯顿",
+      "home": "GER",
+      "away": "CUW",
+      "status": "upcoming"
+    },
+    {
+      "id": "E2",
+      "group": "E",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "19:00",
+      "venue": "Lincoln Financial Field, 费城",
+      "home": "CIV",
+      "away": "ECU",
+      "status": "upcoming"
+    },
+    {
+      "id": "E3",
+      "group": "E",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "16:00",
+      "venue": "BMO Field, 多伦多",
+      "home": "GER",
+      "away": "CIV",
+      "status": "upcoming"
+    },
+    {
+      "id": "E4",
+      "group": "E",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "20:00",
+      "venue": "Arrowhead Stadium, 堪萨斯城",
+      "home": "ECU",
+      "away": "CUW",
+      "status": "upcoming"
+    },
+    {
+      "id": "E5",
+      "group": "E",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "16:00",
+      "venue": "MetLife Stadium, 纽约/新泽西",
+      "home": "ECU",
+      "away": "GER",
+      "status": "upcoming"
+    },
+    {
+      "id": "E6",
+      "group": "E",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "16:00",
+      "venue": "Lincoln Financial Field, 费城",
+      "home": "CUW",
+      "away": "CIV",
+      "status": "upcoming"
+    },
+    {
+      "id": "F1",
+      "group": "F",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "16:00",
+      "venue": "AT&T Stadium, 达拉斯",
+      "home": "NED",
+      "away": "JPN",
+      "status": "upcoming"
+    },
+    {
+      "id": "F2",
+      "group": "F",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-14",
+      "time": "22:00",
+      "venue": "Estadio BBVA, 蒙特雷",
+      "home": "SWE",
+      "away": "TUN",
+      "status": "upcoming"
+    },
+    {
+      "id": "F3",
+      "group": "F",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-20",
+      "time": "13:00",
+      "venue": "NRG Stadium, 休斯顿",
+      "home": "NED",
+      "away": "SWE",
+      "status": "upcoming"
+    },
+    {
+      "id": "F4",
+      "group": "F",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "00:00",
+      "venue": "Estadio BBVA, 蒙特雷",
+      "home": "TUN",
+      "away": "JPN",
+      "status": "upcoming"
+    },
+    {
+      "id": "F5",
+      "group": "F",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "19:00",
+      "venue": "AT&T Stadium, 达拉斯",
+      "home": "JPN",
+      "away": "SWE",
+      "status": "upcoming"
+    },
+    {
+      "id": "F6",
+      "group": "F",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-25",
+      "time": "19:00",
+      "venue": "Arrowhead Stadium, 堪萨斯城",
+      "home": "TUN",
+      "away": "NED",
+      "status": "upcoming"
+    },
+    {
+      "id": "G1",
+      "group": "G",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "15:00",
+      "venue": "Lumen Field, 西雅图",
+      "home": "BEL",
+      "away": "EGY",
+      "status": "upcoming"
+    },
+    {
+      "id": "G2",
+      "group": "G",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "21:00",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "home": "IRN",
+      "away": "NZL",
+      "status": "upcoming"
+    },
+    {
+      "id": "G3",
+      "group": "G",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "15:00",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "home": "BEL",
+      "away": "IRN",
+      "status": "upcoming"
+    },
+    {
+      "id": "G4",
+      "group": "G",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "21:00",
+      "venue": "BC Place, 温哥华",
+      "home": "NZL",
+      "away": "EGY",
+      "status": "upcoming"
+    },
+    {
+      "id": "G5",
+      "group": "G",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "23:00",
+      "venue": "Lumen Field, 西雅图",
+      "home": "EGY",
+      "away": "IRN",
+      "status": "upcoming"
+    },
+    {
+      "id": "G6",
+      "group": "G",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "23:00",
+      "venue": "BC Place, 温哥华",
+      "home": "NZL",
+      "away": "BEL",
+      "status": "upcoming"
+    },
+    {
+      "id": "H1",
+      "group": "H",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "12:00",
+      "venue": "Mercedes-Benz Stadium, 亚特兰大",
+      "home": "ESP",
+      "away": "CPV",
+      "status": "upcoming"
+    },
+    {
+      "id": "H2",
+      "group": "H",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-15",
+      "time": "18:00",
+      "venue": "Hard Rock Stadium, 迈阿密",
+      "home": "KSA",
+      "away": "URU",
+      "status": "upcoming"
+    },
+    {
+      "id": "H3",
+      "group": "H",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "12:00",
+      "venue": "Mercedes-Benz Stadium, 亚特兰大",
+      "home": "ESP",
+      "away": "KSA",
+      "status": "upcoming"
+    },
+    {
+      "id": "H4",
+      "group": "H",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-21",
+      "time": "18:00",
+      "venue": "Hard Rock Stadium, 迈阿密",
+      "home": "URU",
+      "away": "CPV",
+      "status": "upcoming"
+    },
+    {
+      "id": "H5",
+      "group": "H",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "20:00",
+      "venue": "NRG Stadium, 休斯顿",
+      "home": "CPV",
+      "away": "KSA",
+      "status": "upcoming"
+    },
+    {
+      "id": "H6",
+      "group": "H",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "20:00",
+      "venue": "Estadio Akron, 瓜达拉哈拉",
+      "home": "URU",
+      "away": "ESP",
+      "status": "upcoming"
+    },
+    {
+      "id": "I1",
+      "group": "I",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-16",
+      "time": "15:00",
+      "venue": "MetLife Stadium, 纽约/新泽西",
+      "home": "FRA",
+      "away": "SEN",
+      "status": "upcoming"
+    },
+    {
+      "id": "I2",
+      "group": "I",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-16",
+      "time": "18:00",
+      "venue": "Gillette Stadium, 波士顿",
+      "home": "IRQ",
+      "away": "NOR",
+      "status": "upcoming"
+    },
+    {
+      "id": "I3",
+      "group": "I",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "17:00",
+      "venue": "Lincoln Financial Field, 费城",
+      "home": "FRA",
+      "away": "IRQ",
+      "status": "upcoming"
+    },
+    {
+      "id": "I4",
+      "group": "I",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "20:00",
+      "venue": "MetLife Stadium, 纽约/新泽西",
+      "home": "NOR",
+      "away": "SEN",
+      "status": "upcoming"
+    },
+    {
+      "id": "I5",
+      "group": "I",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "15:00",
+      "venue": "Gillette Stadium, 波士顿",
+      "home": "NOR",
+      "away": "FRA",
+      "status": "upcoming"
+    },
+    {
+      "id": "I6",
+      "group": "I",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-26",
+      "time": "15:00",
+      "venue": "BMO Field, 多伦多",
+      "home": "SEN",
+      "away": "IRQ",
+      "status": "upcoming"
+    },
+    {
+      "id": "J1",
+      "group": "J",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-16",
+      "time": "21:00",
+      "venue": "Arrowhead Stadium, 堪萨斯城",
+      "home": "ARG",
+      "away": "ALG",
+      "status": "upcoming"
+    },
+    {
+      "id": "J2",
+      "group": "J",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "00:00",
+      "venue": "Levi's Stadium, 旧金山湾区",
+      "home": "AUT",
+      "away": "JOR",
+      "status": "upcoming"
+    },
+    {
+      "id": "J3",
+      "group": "J",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "13:00",
+      "venue": "AT&T Stadium, 达拉斯",
+      "home": "ARG",
+      "away": "AUT",
+      "status": "upcoming"
+    },
+    {
+      "id": "J4",
+      "group": "J",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-22",
+      "time": "23:00",
+      "venue": "Levi's Stadium, 旧金山湾区",
+      "home": "JOR",
+      "away": "ALG",
+      "status": "upcoming"
+    },
+    {
+      "id": "J5",
+      "group": "J",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "22:00",
+      "venue": "Arrowhead Stadium, 堪萨斯城",
+      "home": "ALG",
+      "away": "AUT",
+      "status": "upcoming"
+    },
+    {
+      "id": "J6",
+      "group": "J",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "22:00",
+      "venue": "AT&T Stadium, 达拉斯",
+      "home": "JOR",
+      "away": "ARG",
+      "status": "upcoming"
+    },
+    {
+      "id": "K1",
+      "group": "K",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "13:00",
+      "venue": "NRG Stadium, 休斯顿",
+      "home": "POR",
+      "away": "COD",
+      "status": "upcoming"
+    },
+    {
+      "id": "K2",
+      "group": "K",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "22:00",
+      "venue": "Estadio Azteca, 墨西哥城",
+      "home": "UZB",
+      "away": "COL",
+      "status": "upcoming"
+    },
+    {
+      "id": "K3",
+      "group": "K",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "13:00",
+      "venue": "NRG Stadium, 休斯顿",
+      "home": "POR",
+      "away": "UZB",
+      "status": "upcoming"
+    },
+    {
+      "id": "K4",
+      "group": "K",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "22:00",
+      "venue": "Estadio Akron, 瓜达拉哈拉",
+      "home": "COL",
+      "away": "COD",
+      "status": "upcoming"
+    },
+    {
+      "id": "K5",
+      "group": "K",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "19:30",
+      "venue": "Hard Rock Stadium, 迈阿密",
+      "home": "COL",
+      "away": "POR",
+      "status": "upcoming"
+    },
+    {
+      "id": "K6",
+      "group": "K",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "19:30",
+      "venue": "Mercedes-Benz Stadium, 亚特兰大",
+      "home": "COD",
+      "away": "UZB",
+      "status": "upcoming"
+    },
+    {
+      "id": "L1",
+      "group": "L",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "16:00",
+      "venue": "AT&T Stadium, 达拉斯",
+      "home": "ENG",
+      "away": "CRO",
+      "status": "upcoming"
+    },
+    {
+      "id": "L2",
+      "group": "L",
+      "round": "group",
+      "matchday": 1,
+      "date": "2026-06-17",
+      "time": "19:00",
+      "venue": "BMO Field, 多伦多",
+      "home": "GHA",
+      "away": "PAN",
+      "status": "upcoming"
+    },
+    {
+      "id": "L3",
+      "group": "L",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "16:00",
+      "venue": "Gillette Stadium, 波士顿",
+      "home": "ENG",
+      "away": "GHA",
+      "status": "upcoming"
+    },
+    {
+      "id": "L4",
+      "group": "L",
+      "round": "group",
+      "matchday": 2,
+      "date": "2026-06-23",
+      "time": "19:00",
+      "venue": "BMO Field, 多伦多",
+      "home": "PAN",
+      "away": "CRO",
+      "status": "upcoming"
+    },
+    {
+      "id": "L5",
+      "group": "L",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "17:00",
+      "venue": "MetLife Stadium, 纽约/新泽西",
+      "home": "PAN",
+      "away": "ENG",
+      "status": "upcoming"
+    },
+    {
+      "id": "L6",
+      "group": "L",
+      "round": "group",
+      "matchday": 3,
+      "date": "2026-06-27",
+      "time": "17:00",
+      "venue": "Lincoln Financial Field, 费城",
+      "home": "CRO",
+      "away": "GHA",
+      "status": "upcoming"
+    }
+  ],
+  "knockout": {
+    "_note": "淘汰赛对阵待小组赛结束后确定，此处为赛程框架",
+    "round32": [
+      {
+        "id": "R32-1",
+        "date": "2026-06-28",
+        "venue": "SoFi Stadium, 洛杉矶"
+      },
+      {
+        "id": "R32-2",
+        "date": "2026-06-28",
+        "venue": "Mercedes-Benz Stadium, 亚特兰大"
+      },
+      {
+        "id": "R32-3",
+        "date": "2026-06-29",
+        "venue": "Gillette Stadium, 波士顿"
+      },
+      {
+        "id": "R32-4",
+        "date": "2026-06-29",
+        "venue": "MetLife Stadium, 纽约/新泽西"
+      },
+      {
+        "id": "R32-5",
+        "date": "2026-06-29",
+        "venue": "AT&T Stadium, 达拉斯"
+      },
+      {
+        "id": "R32-6",
+        "date": "2026-06-30",
+        "venue": "NRG Stadium, 休斯顿"
+      },
+      {
+        "id": "R32-7",
+        "date": "2026-06-30",
+        "venue": "Lincoln Financial Field, 费城"
+      },
+      {
+        "id": "R32-8",
+        "date": "2026-06-30",
+        "venue": "Lumen Field, 西雅图"
+      },
+      {
+        "id": "R32-9",
+        "date": "2026-07-01",
+        "venue": "Arrowhead Stadium, 堪萨斯城"
+      },
+      {
+        "id": "R32-10",
+        "date": "2026-07-01",
+        "venue": "Hard Rock Stadium, 迈阿密"
+      },
+      {
+        "id": "R32-11",
+        "date": "2026-07-02",
+        "venue": "BC Place, 温哥华"
+      },
+      {
+        "id": "R32-12",
+        "date": "2026-07-02",
+        "venue": "Levi's Stadium, 旧金山湾区"
+      },
+      {
+        "id": "R32-13",
+        "date": "2026-07-02",
+        "venue": "Estadio Azteca, 墨西哥城"
+      },
+      {
+        "id": "R32-14",
+        "date": "2026-07-03",
+        "venue": "BMO Field, 多伦多"
+      },
+      {
+        "id": "R32-15",
+        "date": "2026-07-03",
+        "venue": "Estadio BBVA, 蒙特雷"
+      },
+      {
+        "id": "R32-16",
+        "date": "2026-07-03",
+        "venue": "Estadio Akron, 瓜达拉哈拉"
+      }
+    ],
+    "round16": [
+      {
+        "id": "R16-1",
+        "date": "2026-07-04",
+        "venue": "Lincoln Financial Field, 费城"
+      },
+      {
+        "id": "R16-2",
+        "date": "2026-07-04",
+        "venue": "NRG Stadium, 休斯顿"
+      },
+      {
+        "id": "R16-3",
+        "date": "2026-07-05",
+        "venue": "MetLife Stadium, 纽约/新泽西"
+      },
+      {
+        "id": "R16-4",
+        "date": "2026-07-05",
+        "venue": "Estadio Azteca, 墨西哥城"
+      },
+      {
+        "id": "R16-5",
+        "date": "2026-07-06",
+        "venue": "AT&T Stadium, 达拉斯"
+      },
+      {
+        "id": "R16-6",
+        "date": "2026-07-06",
+        "venue": "Lumen Field, 西雅图"
+      },
+      {
+        "id": "R16-7",
+        "date": "2026-07-07",
+        "venue": "Mercedes-Benz Stadium, 亚特兰大"
+      },
+      {
+        "id": "R16-8",
+        "date": "2026-07-07",
+        "venue": "BC Place, 温哥华"
+      }
+    ],
+    "quarter": [
+      {
+        "id": "QF-1",
+        "date": "2026-07-09",
+        "venue": "Gillette Stadium, 波士顿"
+      },
+      {
+        "id": "QF-2",
+        "date": "2026-07-10",
+        "venue": "SoFi Stadium, 洛杉矶"
+      },
+      {
+        "id": "QF-3",
+        "date": "2026-07-11",
+        "venue": "Hard Rock Stadium, 迈阿密"
+      },
+      {
+        "id": "QF-4",
+        "date": "2026-07-11",
+        "venue": "Arrowhead Stadium, 堪萨斯城"
+      }
+    ],
+    "semi": [
+      {
+        "id": "SF-1",
+        "date": "2026-07-14",
+        "venue": "AT&T Stadium, 达拉斯"
+      },
+      {
+        "id": "SF-2",
+        "date": "2026-07-15",
+        "venue": "Mercedes-Benz Stadium, 亚特兰大"
+      }
+    ],
+    "bronze": {
+      "id": "3RD",
+      "date": "2026-07-18",
+      "venue": "Hard Rock Stadium, 迈阿密"
+    },
+    "final": {
+      "id": "FINAL",
+      "date": "2026-07-19",
+      "venue": "MetLife Stadium, 纽约/新泽西"
+    }
+  }
+}

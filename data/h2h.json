@@ -1,0 +1,1248 @@
+{
+  "_meta": {
+    "description": "2026世界杯小组赛历史对阵数据库",
+    "updated": "2026-06-10",
+    "sources": [
+      "11v11.com",
+      "RSSSF",
+      "transfermarkt H2H",
+      "FIFA官方交锋记录"
+    ],
+    "note": "key格式为字母序排列的 'TEAMA_vs_TEAMB'，不含淘汰赛潜在对阵",
+    "styleMatchup": {
+      "possession": {
+        "strongAgainst": [
+          "physical",
+          "balanced"
+        ],
+        "weakAgainst": [
+          "press",
+          "counter"
+        ]
+      },
+      "counter": {
+        "strongAgainst": [
+          "possession",
+          "technical"
+        ],
+        "weakAgainst": [
+          "possession_advanced",
+          "press"
+        ]
+      },
+      "press": {
+        "strongAgainst": [
+          "possession",
+          "counter"
+        ],
+        "weakAgainst": [
+          "technical",
+          "physical"
+        ]
+      },
+      "technical": {
+        "strongAgainst": [
+          "press",
+          "physical"
+        ],
+        "weakAgainst": [
+          "counter",
+          "balanced"
+        ]
+      },
+      "physical": {
+        "strongAgainst": [
+          "technical"
+        ],
+        "weakAgainst": [
+          "possession",
+          "press"
+        ]
+      },
+      "balanced": {
+        "strongAgainst": [
+          "technical"
+        ],
+        "weakAgainst": [
+          "press",
+          "possession"
+        ]
+      }
+    }
+  },
+  "matchups": {
+    "MEX_vs_RSA": {
+      "total": 4,
+      "winsA": 3,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 11,
+      "goalsB": 4,
+      "last5": [
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2010-06-11",
+        "event": "2010世界杯小组赛",
+        "score": "1-1"
+      },
+      "note": "墨西哥历史占优，但最近一次世界杯交锋为平局",
+      "upsetSignal": "low"
+    },
+    "CZE_vs_KOR": {
+      "total": 2,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 3,
+      "goalsB": 1,
+      "last5": [
+        "W",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2022-11-10",
+        "event": "友谊赛",
+        "score": "2-0"
+      },
+      "note": "交锋极少，捷克不败",
+      "upsetSignal": "low"
+    },
+    "CZE_vs_RSA": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "两队历史上从未交手",
+      "upsetSignal": "unknown"
+    },
+    "CZE_vs_MEX": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋记录",
+      "upsetSignal": "unknown"
+    },
+    "KOR_vs_MEX": {
+      "total": 8,
+      "winsA": 2,
+      "draws": 1,
+      "winsB": 5,
+      "goalsA": 9,
+      "goalsB": 16,
+      "last5": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2018-06-23",
+        "event": "2018世界杯小组赛",
+        "score": "1-2"
+      },
+      "note": "墨西哥对韩国历史占优，近3次世界杯交锋墨2胜",
+      "upsetSignal": "medium"
+    },
+    "KOR_vs_RSA": {
+      "total": 2,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 3,
+      "goalsB": 1,
+      "last5": [
+        "W",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2009-11-14",
+        "event": "友谊赛",
+        "score": "2-0"
+      },
+      "note": "交锋极少",
+      "upsetSignal": "low"
+    },
+    "BIH_vs_CAN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CAN_vs_QAT": {
+      "total": 1,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 2,
+      "goalsB": 0,
+      "last5": [
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2023-09-12",
+        "event": "友谊赛",
+        "score": "2-0"
+      },
+      "note": "仅一次交锋",
+      "upsetSignal": "low"
+    },
+    "CAN_vs_SUI": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "BIH_vs_QAT": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "BIH_vs_SUI": {
+      "total": 2,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 2,
+      "goalsA": 1,
+      "goalsB": 5,
+      "last5": [
+        "L",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2014-06-18",
+        "event": "友谊赛",
+        "score": "0-3"
+      },
+      "note": "瑞士对波黑全胜",
+      "upsetSignal": "low"
+    },
+    "QAT_vs_SUI": {
+      "total": 1,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 0,
+      "goalsB": 3,
+      "last5": [
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2018-11-14",
+        "event": "友谊赛",
+        "score": "0-3"
+      },
+      "note": "仅一次友谊赛交锋",
+      "upsetSignal": "low"
+    },
+    "BRA_vs_MAR": {
+      "total": 3,
+      "winsA": 2,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 6,
+      "goalsB": 3,
+      "last5": [
+        "L",
+        "W",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2022-12-06",
+        "event": "2022世界杯1/8决赛",
+        "score": "1-1(摩洛哥点球胜)"
+      },
+      "note": "★ 摩洛哥最近一次世界杯淘汰巴西！巴西需复仇",
+      "upsetSignal": "high"
+    },
+    "BRA_vs_HAI": {
+      "total": 1,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 6,
+      "goalsB": 0,
+      "last5": [
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2004-08-18",
+        "event": "友谊赛",
+        "score": "6-0"
+      },
+      "note": "实力悬殊巨大",
+      "upsetSignal": "none"
+    },
+    "BRA_vs_SCO": {
+      "total": 10,
+      "winsA": 8,
+      "draws": 2,
+      "winsB": 0,
+      "goalsA": 20,
+      "goalsB": 4,
+      "last5": [
+        "W",
+        "W",
+        "W",
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2011-03-27",
+        "event": "友谊赛",
+        "score": "2-0"
+      },
+      "note": "苏格兰对巴西历史一胜难求，10场0胜",
+      "upsetSignal": "none"
+    },
+    "HAI_vs_MAR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "HAI_vs_SCO": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "MAR_vs_SCO": {
+      "total": 1,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 3,
+      "goalsB": 0,
+      "last5": [
+        "W"
+      ],
+      "lastMatch": {
+        "date": "1998-06-23",
+        "event": "1998世界杯小组赛",
+        "score": "3-0"
+      },
+      "note": "唯一交手摩洛哥大胜",
+      "upsetSignal": "low"
+    },
+    "AUS_vs_PAR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "AUS_vs_TUR": {
+      "total": 1,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 0,
+      "goalsB": 1,
+      "last5": [
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2004-05-27",
+        "event": "友谊赛",
+        "score": "0-1"
+      },
+      "note": "仅一次交锋",
+      "upsetSignal": "low"
+    },
+    "AUS_vs_USA": {
+      "total": 3,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 1,
+      "goalsA": 3,
+      "goalsB": 4,
+      "last5": [
+        "L",
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2015-09-08",
+        "event": "友谊赛",
+        "score": "1-2"
+      },
+      "note": "双方实力接近，1胜1平1负均势",
+      "upsetSignal": "medium"
+    },
+    "PAR_vs_TUR": {
+      "total": 2,
+      "winsA": 0,
+      "draws": 1,
+      "winsB": 1,
+      "goalsA": 1,
+      "goalsB": 2,
+      "last5": [
+        "L",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2018-05-29",
+        "event": "友谊赛",
+        "score": "0-1"
+      },
+      "note": "土耳其略占优势",
+      "upsetSignal": "low"
+    },
+    "PAR_vs_USA": {
+      "total": 5,
+      "winsA": 2,
+      "draws": 1,
+      "winsB": 2,
+      "goalsA": 6,
+      "goalsB": 6,
+      "last5": [
+        "W",
+        "L",
+        "D",
+        "W",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2023-07-02",
+        "event": "2023美洲杯小组赛",
+        "score": "3-1"
+      },
+      "note": "★ 巴拉圭最近一次交手3-1战胜美国，势均力敌",
+      "upsetSignal": "high"
+    },
+    "TUR_vs_USA": {
+      "total": 3,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 1,
+      "goalsA": 4,
+      "goalsB": 4,
+      "last5": [
+        "L",
+        "W",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2014-06-01",
+        "event": "友谊赛",
+        "score": "2-1"
+      },
+      "note": "完全均势的对阵",
+      "upsetSignal": "medium"
+    },
+    "CIV_vs_CUW": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CIV_vs_ECU": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CIV_vs_GER": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CUW_vs_ECU": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CUW_vs_GER": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "库拉索首次参赛，无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ECU_vs_GER": {
+      "total": 2,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 2,
+      "goalsA": 2,
+      "goalsB": 7,
+      "last5": [
+        "L",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2013-05-29",
+        "event": "友谊赛",
+        "score": "2-4"
+      },
+      "note": "德国历史占优，两次交锋全胜",
+      "upsetSignal": "low"
+    },
+    "JPN_vs_NED": {
+      "total": 3,
+      "winsA": 0,
+      "draws": 1,
+      "winsB": 2,
+      "goalsA": 3,
+      "goalsB": 6,
+      "last5": [
+        "L",
+        "D",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2013-11-16",
+        "event": "友谊赛",
+        "score": "2-2"
+      },
+      "note": "荷兰对日本历史不败",
+      "upsetSignal": "low"
+    },
+    "JPN_vs_SWE": {
+      "total": 5,
+      "winsA": 1,
+      "draws": 2,
+      "winsB": 2,
+      "goalsA": 6,
+      "goalsB": 9,
+      "last5": [
+        "L",
+        "D",
+        "W",
+        "D",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2016-06-03",
+        "event": "友谊赛",
+        "score": "0-3"
+      },
+      "note": "瑞典略占优势，日本曾在2011年客场1-0胜",
+      "upsetSignal": "medium"
+    },
+    "JPN_vs_TUN": {
+      "total": 4,
+      "winsA": 3,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 6,
+      "goalsB": 3,
+      "last5": [
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2022-06-14",
+        "event": "麒麟杯",
+        "score": "3-0"
+      },
+      "note": "日本对突尼斯历史占优，最近一次3-0大胜",
+      "upsetSignal": "low"
+    },
+    "NED_vs_SWE": {
+      "total": 24,
+      "winsA": 11,
+      "draws": 6,
+      "winsB": 7,
+      "goalsA": 46,
+      "goalsB": 38,
+      "last5": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2023-09-09",
+        "event": "2024欧预赛",
+        "score": "3-1"
+      },
+      "note": "荷兰历史占优但瑞典偶有胜绩，两队交锋频繁",
+      "upsetSignal": "medium"
+    },
+    "NED_vs_TUN": {
+      "total": 2,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 3,
+      "goalsB": 1,
+      "last5": [
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2018-06-04",
+        "event": "友谊赛",
+        "score": "1-0"
+      },
+      "note": "荷兰对突尼斯不败",
+      "upsetSignal": "low"
+    },
+    "SWE_vs_TUN": {
+      "total": 3,
+      "winsA": 2,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 4,
+      "goalsB": 1,
+      "last5": [
+        "W",
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2015-05-31",
+        "event": "友谊赛",
+        "score": "1-0"
+      },
+      "note": "瑞典对突尼斯不败",
+      "upsetSignal": "low"
+    },
+    "BEL_vs_EGY": {
+      "total": 3,
+      "winsA": 2,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 7,
+      "goalsB": 3,
+      "last5": [
+        "W",
+        "L",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2022-11-18",
+        "event": "友谊赛",
+        "score": "2-1"
+      },
+      "note": "比利时历史占优但埃及曾在2018年友谊赛3-0胜比利时",
+      "upsetSignal": "medium"
+    },
+    "BEL_vs_IRN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "BEL_vs_NZL": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "EGY_vs_IRN": {
+      "total": 1,
+      "winsA": 0,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 1,
+      "goalsB": 1,
+      "last5": [
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2018-06-06",
+        "event": "友谊赛",
+        "score": "1-1"
+      },
+      "note": "仅一次交锋，平局",
+      "upsetSignal": "low"
+    },
+    "EGY_vs_NZL": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "IRN_vs_NZL": {
+      "total": 1,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 3,
+      "goalsB": 0,
+      "last5": [
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2014-05-30",
+        "event": "友谊赛",
+        "score": "3-0"
+      },
+      "note": "仅一次交锋",
+      "upsetSignal": "low"
+    },
+    "CPV_vs_ESP": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "佛得角首次参赛对阵世界冠军",
+      "upsetSignal": "unknown"
+    },
+    "CPV_vs_KSA": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CPV_vs_URU": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ESP_vs_KSA": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ESP_vs_URU": {
+      "total": 11,
+      "winsA": 6,
+      "draws": 4,
+      "winsB": 1,
+      "goalsA": 19,
+      "goalsB": 9,
+      "last5": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2019-06-07",
+        "event": "友谊赛",
+        "score": "2-1"
+      },
+      "note": "西班牙历史压倒性优势，乌拉圭仅1胜（2013联合会杯）",
+      "upsetSignal": "low"
+    },
+    "KSA_vs_URU": {
+      "total": 2,
+      "winsA": 0,
+      "draws": 1,
+      "winsB": 1,
+      "goalsA": 2,
+      "goalsB": 3,
+      "last5": [
+        "L",
+        "D"
+      ],
+      "lastMatch": {
+        "date": "2018-06-20",
+        "event": "2018世界杯小组赛",
+        "score": "0-1"
+      },
+      "note": "乌拉圭略占优，2018世界杯1-0小胜",
+      "upsetSignal": "low"
+    },
+    "FRA_vs_IRQ": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "FRA_vs_NOR": {
+      "total": 20,
+      "winsA": 10,
+      "draws": 5,
+      "winsB": 5,
+      "goalsA": 30,
+      "goalsB": 23,
+      "last5": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2023-10-15",
+        "event": "友谊赛",
+        "score": "2-1"
+      },
+      "note": "★ 挪威1998年世界杯曾2-1击败法国！历史交锋20次挪威5胜，不容小觑",
+      "upsetSignal": "high"
+    },
+    "FRA_vs_SEN": {
+      "total": 1,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 0,
+      "goalsB": 1,
+      "last5": [
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2002-05-31",
+        "event": "2002世界杯揭幕战",
+        "score": "0-1"
+      },
+      "note": "★ 塞内加尔在唯一一次交锋中（2002世界杯揭幕战）1-0击败卫冕冠军法国！历史级爆冷",
+      "upsetSignal": "high"
+    },
+    "IRQ_vs_NOR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "IRQ_vs_SEN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "NOR_vs_SEN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "哈兰德时代首次交锋",
+      "upsetSignal": "unknown"
+    },
+    "ALG_vs_ARG": {
+      "total": 4,
+      "winsA": 1,
+      "draws": 2,
+      "winsB": 1,
+      "goalsA": 8,
+      "goalsB": 9,
+      "last5": [
+        "L",
+        "D",
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2020-01-29",
+        "event": "友谊赛",
+        "score": "1-3"
+      },
+      "note": "历史交锋均势！阿尔及利亚曾在1982世界杯2-1击败阿根廷",
+      "upsetSignal": "medium"
+    },
+    "ALG_vs_AUT": {
+      "total": 2,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 1,
+      "goalsA": 3,
+      "goalsB": 3,
+      "last5": [
+        "L",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "1982-06-21",
+        "event": "1982世界杯小组赛",
+        "score": "2-0"
+      },
+      "note": "历史各胜一场",
+      "upsetSignal": "medium"
+    },
+    "ALG_vs_JOR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ARG_vs_AUT": {
+      "total": 2,
+      "winsA": 1,
+      "draws": 1,
+      "winsB": 0,
+      "goalsA": 6,
+      "goalsB": 2,
+      "last5": [
+        "D",
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2007-10-13",
+        "event": "友谊赛",
+        "score": "5-0"
+      },
+      "note": "阿根廷占优，但最新一次奥地利高压战术未与阿根廷交手",
+      "upsetSignal": "low"
+    },
+    "ARG_vs_JOR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "AUT_vs_JOR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "COD_vs_COL": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "COD_vs_POR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "COD_vs_UZB": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "COL_vs_POR": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "★ 两队历史从未交手！世界杯小组赛将创造首次交锋",
+      "upsetSignal": "unknown"
+    },
+    "COL_vs_UZB": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "POR_vs_UZB": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CRO_vs_ENG": {
+      "total": 11,
+      "winsA": 4,
+      "draws": 2,
+      "winsB": 5,
+      "goalsA": 14,
+      "goalsB": 21,
+      "last5": [
+        "L",
+        "W",
+        "L",
+        "D",
+        "L"
+      ],
+      "lastMatch": {
+        "date": "2024-06-22",
+        "event": "2024欧洲杯小组赛",
+        "score": "0-1"
+      },
+      "note": "★ 经典老对手！2018世界杯半决赛克罗地亚2-1逆转英格兰，2024欧洲杯英格兰1-0复仇",
+      "upsetSignal": "high"
+    },
+    "CRO_vs_GHA": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "CRO_vs_PAN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ENG_vs_GHA": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    },
+    "ENG_vs_PAN": {
+      "total": 1,
+      "winsA": 1,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 6,
+      "goalsB": 1,
+      "last5": [
+        "W"
+      ],
+      "lastMatch": {
+        "date": "2018-06-24",
+        "event": "2018世界杯小组赛",
+        "score": "6-1"
+      },
+      "note": "唯一交锋英格兰6-1大胜",
+      "upsetSignal": "none"
+    },
+    "GHA_vs_PAN": {
+      "total": 0,
+      "winsA": 0,
+      "draws": 0,
+      "winsB": 0,
+      "goalsA": 0,
+      "goalsB": 0,
+      "last5": [],
+      "lastMatch": null,
+      "note": "无历史交锋",
+      "upsetSignal": "unknown"
+    }
+  },
+  "upsetAlerts": [
+    {
+      "matchId": "I1",
+      "matchup": "FRA vs SEN",
+      "riskScore": 62,
+      "level": "orange",
+      "reason": "★ 塞内加尔在2002世界杯揭幕战1-0击败卫冕冠军法国——唯一一次交锋。风格克制：塞内加尔身体流+防反对法国传控体系有天然克制，风险较高"
+    },
+    {
+      "matchId": "I5",
+      "matchup": "NOR vs FRA",
+      "riskScore": 55,
+      "level": "orange",
+      "reason": "挪威1998年世界杯2-1击败法国，哈兰德+厄德高双核对法国后防线构成巨大威胁"
+    },
+    {
+      "matchId": "C1",
+      "matchup": "BRA vs MAR",
+      "riskScore": 58,
+      "level": "orange",
+      "reason": "摩洛哥在2022世界杯1/8决赛淘汰巴西！摩洛哥防反战术对巴西技术流有天然克制"
+    },
+    {
+      "matchId": "D1",
+      "matchup": "USA vs PAR",
+      "riskScore": 53,
+      "level": "orange",
+      "reason": "巴拉圭2023年美洲杯3-1击败美国，防反专克东道主。美国热身赛对欧洲队八连败"
+    },
+    {
+      "matchId": "L1",
+      "matchup": "ENG vs CRO",
+      "riskScore": 50,
+      "level": "yellow",
+      "reason": "克罗地亚2018世界杯半决赛击败英格兰，2024欧洲杯英格兰1-0复仇。势均力敌"
+    }
+  ]
+}

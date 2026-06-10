@@ -1,0 +1,14 @@
+{
+  "_meta": {
+    "description": "实际赛果记录 - 赛后手动更新或通过update.py自动更新",
+    "version": "2.0"
+  },
+  "results": [],
+  "stats": {
+    "totalMatches": 0,
+    "homeWins": 0,
+    "draws": 0,
+    "awayWins": 0,
+    "avgGoals": 0
+  }
+}

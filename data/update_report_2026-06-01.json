@@ -1,0 +1,14 @@
+{
+  "date": "2026-06-01",
+  "actions": {
+    "news": {
+      "news_file": "e:\\2026美加墨世界杯\\data\\daily_brief_2026-06-01.json",
+      "status": "created"
+    }
+  },
+  "summary": {
+    "date": "2026-06-01",
+    "today_matches": 0,
+    "completed_total": 0
+  }
+}
