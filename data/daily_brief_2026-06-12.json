@@ -1,10 +1,65 @@
 {
   "date": "2026-06-12",
-  "generated": "2026-06-12T10:40:18.416859+08:00",
-  "source": "手动收集",
-  "headlines": [],
-  "injuries": [],
+  "generated": "2026-06-12T10:58:02.046262+08:00",
+  "headlines": [
+    "已完赛 1 场，总进球 2，场均 2.0 球",
+    "未来3天 12 场比赛"
+  ],
+  "match_summary": [
+    {
+      "matchId": "B1",
+      "time": "15:00",
+      "group": "B",
+      "home": "加拿大",
+      "away": "波黑",
+      "venue": "BMO Field, 多伦多",
+      "status": "upcoming",
+      "prediction": {
+        "score": "1:1",
+        "homeWin": 0.4251,
+        "draw": 0.2617,
+        "awayWin": 0.3131
+      }
+    },
+    {
+      "matchId": "D1",
+      "time": "21:00",
+      "group": "D",
+      "home": "美国",
+      "away": "巴拉圭",
+      "venue": "SoFi Stadium, 洛杉矶",
+      "status": "upcoming",
+      "prediction": {
+        "score": "1:0",
+        "homeWin": 0.5473,
+        "draw": 0.2461,
+        "awayWin": 0.2064
+      }
+    }
+  ],
+  "group_standings": {
+    "A": {
+      "MEX": {
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 2,
+        "GA": 0,
+        "Pts": 3
+      },
+      "RSA": {
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "Pts": 0
+      }
+    }
+  },
   "odds_movement": [],
-  "team_news": [],
-  "notes": "请手动填写今日情报，或配置新闻API自动抓取"
+  "injuries": [],
+  "prediction_updates": []
 }

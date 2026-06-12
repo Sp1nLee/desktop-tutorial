@@ -11,7 +11,8 @@
     },
     "note_elo": "Elo评分基于国际足球Elo评级系统，初始值约1500，顶级球队约2000+",
     "note_opta": "Opta评分范围0-100，综合攻防数据建模",
-    "note_styles": "战术风格标签: possession=传控, counter=防反, press=高位逼抢, physical=身体流, technical=技术流, balanced=均衡"
+    "note_styles": "战术风格标签: possession=传控, counter=防反, press=高位逼抢, physical=身体流, technical=技术流, balanced=均衡",
+    "eloLastUpdated": "2026-06-12"
   },
   "teams": [
     {
@@ -351,7 +352,7 @@
       "flag": "🇲🇽",
       "group": "A",
       "fifaRank": 15,
-      "eloRating": 1850,
+      "eloRating": 1859,
       "optaScore": 77.2,
       "marketValue": 2.7,
       "style": "technical",
@@ -546,7 +547,7 @@
       "flag": "🇿🇦",
       "group": "A",
       "fifaRank": 60,
-      "eloRating": 1720,
+      "eloRating": 1711,
       "optaScore": 62.0,
       "marketValue": 0.7,
       "style": "balanced",
