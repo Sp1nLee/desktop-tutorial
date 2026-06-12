@@ -4,46 +4,10 @@
     "description": "每日情报摘要"
   },
   "headlines": [
-    "已完赛 4 场，总进球 10，场均 2.5 球",
+    "已完赛 2 场，总进球 5，场均 2.5 球",
     "未来3天 12 场比赛"
   ],
   "latestResults": [
-    {
-      "id": null,
-      "date": "2026-06-12",
-      "home": "MEX",
-      "away": "RSA",
-      "homeFlag": "🇲🇽",
-      "awayFlag": "🇿🇦",
-      "homeName": "墨西哥",
-      "awayName": "南非",
-      "homeScore": 2,
-      "awayScore": 0,
-      "homeHalf": 1,
-      "awayHalf": 0,
-      "goals": [],
-      "redCards": [],
-      "note": "",
-      "source": "CCTV Sports"
-    },
-    {
-      "id": null,
-      "date": "2026-06-12",
-      "home": "KOR",
-      "away": "CZE",
-      "homeFlag": "🇰🇷",
-      "awayFlag": "🇨🇿",
-      "homeName": "韩国",
-      "awayName": "捷克",
-      "homeScore": 2,
-      "awayScore": 1,
-      "homeHalf": 0,
-      "awayHalf": 0,
-      "goals": [],
-      "redCards": [],
-      "note": "",
-      "source": "CCTV Sports"
-    },
     {
       "id": "A1",
       "date": "2026-06-11",
