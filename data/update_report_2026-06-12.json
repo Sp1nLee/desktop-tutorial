@@ -1,27 +1,9 @@
 {
   "date": "2026-06-12",
-  "actions": {
-    "results": {
-      "results_count": 1,
-      "new_fetched": 0,
-      "missing": []
-    },
-    "elo": {
-      "elo_updated": true,
-      "note": "already_updated"
-    },
-    "odds": {
-      "odds_updated": true,
-      "teams_with_odds": 48
-    },
-    "news": {
-      "news_file": "e:\\2026美加墨世界杯\\data\\daily_brief_2026-06-12.json",
-      "status": "generated"
-    }
-  },
+  "actions": {},
   "summary": {
     "date": "2026-06-12",
     "today_matches": 2,
-    "completed_total": 1
+    "completed_total": 2
   }
 }

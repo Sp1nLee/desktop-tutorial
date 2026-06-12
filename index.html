@@ -213,6 +213,33 @@ body::before {
 .badge-upset { background: #ff174420; color: var(--red); animation: pulse 2s infinite; }
 @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.6; } }
 
+/* ===== v3.0 实时状态指示灯 ===== */
+#liveStatusBar {
+  position:fixed;top:0;left:50%;transform:translateX(-50%);
+  z-index:9998;display:flex;align-items:center;gap:8px;
+  padding:4px 14px;border-radius:0 0 10px 10px;
+  background:rgba(10,14,39,0.95);border:1px solid rgba(255,255,255,0.08);
+  border-top:none;font-size:0.75em;transition:all 0.4s ease;
+}
+#liveDot { width:8px;height:8px;border-radius:50%; }
+#liveDot.online { background:var(--green);box-shadow:0 0 8px var(--green);animation:livePulse 2s infinite; }
+#liveDot.updating { background:var(--orange);box-shadow:0 0 8px var(--orange);animation:livePulse 1s infinite; }
+#liveDot.offline { background:var(--red); }
+@keyframes livePulse { 0%,100% { box-shadow:0 0 4px currentColor; } 50% { box-shadow:0 0 12px currentColor; } }
+
+/* ===== Toast 通知 ===== */
+.toast-container { position:fixed;top:40px;right:16px;z-index:9999;display:flex;flex-direction:column;gap:8px; }
+.toast {
+  background:linear-gradient(135deg,#1a1f3a,#0d1b2d);border:1px solid var(--gold);
+  border-radius:8px;padding:10px 16px;color:#fff;font-size:0.85em;
+  box-shadow:0 4px 16px rgba(0,0,0,0.5);animation:toastIn 0.35s ease,toastOut 0.35s ease 2.8s forwards;
+  max-width:360px;cursor:pointer;
+}
+.toast.goal { border-color:var(--green); }
+.toast.warn { border-color:var(--orange); }
+@keyframes toastIn { from{transform:translateX(120%);opacity:0} to{transform:translateX(0);opacity:1} }
+@keyframes toastOut { from{transform:translateX(0);opacity:1} to{transform:translateX(120%);opacity:0} }
+
 /* ========== 小组卡片网格 ========== */
 .group-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; }
 .group-card {
@@ -687,6 +714,14 @@ body::before {
 </head>
 <body>
 
+<!-- v3.0 实时状态指示灯 -->
+<div id="liveStatusBar">
+  <span id="liveDot" class="offline"></span>
+  <span id="liveStatusText">离线模式</span>
+</div>
+<!-- Toast 通知容器 -->
+<div class="toast-container" id="toastContainer"></div>
+
 <!-- ========== 骨架屏 ========== -->
 <div class="skeleton-overlay" id="skeleton">
   <div class="skeleton-header"></div>
@@ -730,7 +765,11 @@ body::before {
 
 <!-- ============ 新闻中心 Tab（首页） ============ -->
 <div id="tab-news" class="tab-content active" role="tabpanel">
-  <div class="intel-status-row" id="intelStatus"></div>
+  <div class="intel-status-row" id="intelStatus" style="display:none;"></div>
+  <!-- [NEW] 最新赛况 -->
+  <div id="newsLatestResults"></div>
+  <!-- [NEW] 小组积分榜 -->
+  <div id="newsStandings"></div>
   <!-- 夺冠热门推荐 -->
   <div id="newsHotPicks"></div>
   <div class="intel-grid">
@@ -948,6 +987,8 @@ let oddsData = null;
 let h2hData = null;
 let predictionsData = null;
 let resultsData = null;
+let standingsData = null;
+let intelligenceData = null;
 let playersData = null;
 let stadiumsData = null;
 let currentMatchupChart = null;
@@ -966,6 +1007,8 @@ async function loadData() {
     h2hData = d.h2h;
     predictionsData = d.predictions;
     resultsData = d.results;
+    standingsData = d.standings || null;
+    intelligenceData = d.intelligence || null;
     playersData = d.players || null;
     stadiumsData = d.stadiums || null;
     console.log('✅ 数据来源: bundle.js (本地加载)');
@@ -977,13 +1020,15 @@ async function loadData() {
 
   // 方式2: fetch() — HTTP服务器场景
   try {
-    const [teams, schedule, odds, h2h, predictions, results, players, stadiums] = await Promise.all([
+    const [teams, schedule, odds, h2h, predictions, results, standings, intelligence, players, stadiums] = await Promise.all([
       fetch('data/teams.json').then(r => r.json()),
       fetch('data/schedule.json').then(r => r.json()),
       fetch('data/odds.json').then(r => r.json()),
       fetch('data/h2h.json').then(r => r.json()),
       fetch('data/predictions.json').then(r => r.json()),
       fetch('data/results.json').then(r => r.json()),
+      fetch('data/standings.json').then(r => r.json()).catch(() => null),
+      fetch('data/intelligence.json').then(r => r.json()).catch(() => null),
       fetch('data/players.json').then(r => r.json()).catch(() => null),
       fetch('data/stadiums.json').then(r => r.json()).catch(() => null)
     ]);
@@ -993,6 +1038,8 @@ async function loadData() {
     h2hData = h2h;
     predictionsData = predictions;
     resultsData = results;
+    standingsData = standings;
+    intelligenceData = intelligence;
     playersData = players;
     stadiumsData = stadiums;
     console.log('✅ 数据来源: fetch (HTTP加载)');
@@ -1163,8 +1210,12 @@ function renderSchedule() {
     const home = getTeam(m.home);
     const away = getTeam(m.away);
     const isCompleted = m.status === 'completed';
-    const result = isCompleted ? (resultsData?.results?.find(r => r.matchId === m.id)) : null;
-    const scoreText = result ? ` ${result.homeScore}:${result.awayScore}` : '';
+    // 优先使用 schedule.json 自带比分（update.py 赛后同步写入），fallback 查 results.json
+    const result = resultsData?.results?.find(r => r.id === m.id);
+    const hs = m.home_score ?? result?.home_score ?? null;
+    const as = m.away_score ?? result?.away_score ?? null;
+    const scoreText = (hs !== null && as !== null) ? ` ${hs}:${as}` : '';
+    const htText = (result?.home_half !== undefined && result?.away_half !== undefined) ? ` (半场 ${result.home_half}:${result.away_half})` : '';
 	    const bj = toBeijingTime(m.time);
     return `<tr class="${isCompleted ? 'completed' : ''}" onclick="openMatchModal('${m.id}')" tabindex="0" role="button" aria-label="${home?.nameCN||m.home} vs ${away?.nameCN||m.away}">
       <td>${m.date}</td>
@@ -1173,7 +1224,7 @@ function renderSchedule() {
       <td>${home?home.flag:''} ${home?home.nameCN:m.home}</td>
       <td>${away?away.flag:''} ${away?away.nameCN:m.away}</td>
       <td>${m.venue}</td>
-      <td>${isCompleted ? '✅ 已完赛'+scoreText : '⏳ 待进行'}</td>
+      <td>${isCompleted ? '✅'+scoreText+htText : '⏳ 待进行'}</td>
     </tr>`;
   }).join('');
 
@@ -1865,7 +1916,7 @@ function renderAccuracy() {
   // 收集有结果的预测
   const matched = [];
   const resultMap = {};
-  results.forEach(r => { resultMap[r.matchId] = r; });
+  results.forEach(r => { resultMap[r.id] = r; });
 
   preds.forEach(p => {
     if (p.predictedScore && p.accuracy) {
@@ -1945,7 +1996,7 @@ function renderAccuracy() {
         <td>${p.date||'—'}</td>
         <td>${home?.flag||''} ${home?.nameCN||p.homeTeam} vs ${away?.flag||''} ${away?.nameCN||p.awayTeam}</td>
         <td style="color:var(--gold);font-weight:bold;">${ps.home}:${ps.away}</td>
-        <td>${rs ? rs.homeScore+':'+rs.awayScore : '待定'}</td>
+        <td>${rs ? rs.home_score+':'+rs.away_score : '待定'}</td>
         <td>${acc ? getAccIcon(acc.outcomeCorrect) : '—'}</td>
         <td>${acc ? getAccIcon(acc.exactScoreCorrect) : '—'}</td>
         <td>${acc ? getAccIcon(acc.over25Correct) : '—'}</td>
@@ -2029,8 +2080,10 @@ function getPlayerPositions(squad, isHome) {
 
 // ============ 情报中心渲染 ============
 function renderNewsCenter() {
-  renderIntelStatus();
-  renderHotPicks();       // 夺冠热门推荐
+  // renderIntelStatus();  // 已隐藏：数据新鲜度指示器
+  renderLatestResults();   // [NEW] 最新赛况
+  renderGroupStandings();  // [NEW] 小组积分榜
+  renderHotPicks();        // 夺冠热门推荐
   renderPowerRankings();
   renderOddsChart();
   renderGoldenBoot();
@@ -2038,6 +2091,234 @@ function renderNewsCenter() {
   renderConfedChart();
   renderStyleChart();
   renderMarketValue();
+}
+
+// ============ [NEW] 最新赛况 ============
+function renderLatestResults() {
+  const container = document.getElementById('newsLatestResults');
+  if (!container) return;
+
+  // 数据源优先级: intelligence.latestResults > resultsData.results
+  const intelResults = intelligenceData?.latestResults;
+  const rawResults = resultsData?.results || [];
+  const latestResults = intelResults || rawResults.slice().sort((a, b) => (b.date||'').localeCompare(a.date||'')).slice(0, 4);
+
+  if (latestResults.length === 0) {
+    container.innerHTML = '';
+    return;
+  }
+
+  const resultCards = latestResults.map(r => {
+    const homeFlag = r.homeFlag || (getTeam(r.home)?.flag || '');
+    const awayFlag = r.awayFlag || (getTeam(r.away)?.flag || '');
+    const homeName = r.homeName || getTeamName(r.home) || r.home;
+    const awayName = r.awayName || getTeamName(r.away) || r.away;
+    const hs = r.homeScore ?? 0;
+    const aws = r.awayScore ?? 0;
+    const goalsDetail = (r.goals || []).length > 0
+      ? `<div style="font-size:0.78em;color:var(--text-muted);margin-top:6px;">⚽ ${(r.goals||[]).join(' · ')}</div>`
+      : '';
+    const redsDetail = (r.redCards || []).length > 0
+      ? `<div style="font-size:0.78em;color:var(--red);margin-top:4px;">🟥 ${(r.redCards||[]).join(' · ')}</div>`
+      : '';
+    const htText = (r.homeHalf !== null && r.homeHalf !== undefined)
+      ? `<span style="font-size:0.78em;color:var(--text-dim);margin-left:8px;">半场 ${r.homeHalf}:${r.awayHalf}</span>`
+      : '';
+    const sourceTag = r.source
+      ? `<span style="font-size:0.7em;color:var(--text-dim);background:var(--bg-header-mid);padding:1px 6px;border-radius:3px;">${r.source}</span>`
+      : '';
+
+    return `<div class="result-card" style="background:linear-gradient(135deg,var(--bg-card),#0d1b2d);border-radius:var(--radius);padding:16px;margin-bottom:12px;border:1px solid var(--border);cursor:pointer;"
+         onclick="openMatchModal('${r.id||'?'}')" tabindex="0" role="button">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="color:var(--text-muted);font-size:0.8em;">📅 ${r.date||'?'}</span>
+        ${sourceTag}
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:16px;">
+        <div style="text-align:center;flex:1;">
+          <span style="font-size:2em;">${homeFlag}</span>
+          <div style="font-weight:bold;margin-top:4px;">${homeName}</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:2em;font-weight:bold;color:var(--gold);">${hs}:${aws}</div>
+          ${htText}
+        </div>
+        <div style="text-align:center;flex:1;">
+          <span style="font-size:2em;">${awayFlag}</span>
+          <div style="font-weight:bold;margin-top:4px;">${awayName}</div>
+        </div>
+      </div>
+      ${goalsDetail}
+      ${redsDetail}
+      ${r.note ? `<div style="font-size:0.8em;color:var(--orange);margin-top:6px;text-align:center;">📝 ${r.note}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div style="background:var(--bg-card);border-radius:var(--radius);padding:16px;margin-bottom:16px;border:1px solid var(--border);">
+      <h3 style="color:var(--gold);margin-bottom:12px;">📰 最新赛况</h3>
+      ${resultCards}
+    </div>`;
+}
+
+// ============ [NEW] 小组积分榜 ============
+function renderGroupStandings() {
+  const container = document.getElementById('newsStandings');
+  if (!container) return;
+
+  const gm = teamsData?.groupMapping;
+  if (!gm) { container.innerHTML = ''; return; }
+
+  // 优先使用预计算的 standings.json，fallback 到前端实时计算
+  const standingsGroups = standingsData?.groups || {};
+  // 如有赛果但 standings.json 不存在，前端实时计算
+  const liveData = (Object.keys(standingsGroups).length === 0 && resultsData?.results && scheduleData?.matches)
+    ? computeStandingsInPlace() : standingsGroups;
+
+  // 构建所有12组的积分表（有赛果的用真实数据，无赛果的用空表）
+  const allGroups = 'ABCDEFGHIJKL';
+
+  // 构建每组的阵容数据（优先 standings，fallback groupMapping）
+  function buildGroupRows(g) {
+    const standingsRows = liveData[g];  // standings 格式: [{team, nameCN, flag, P, W, D, L, GF, GA, GD, Pts}, ...]
+    if (standingsRows && standingsRows.length > 0) {
+      return standingsRows;
+    }
+    // fallback: 从 groupMapping 构建空积分行
+    const groupInfo = gm[g];
+    if (!groupInfo || !groupInfo.teams) return [];
+    return groupInfo.teams.map(code => {
+      const team = getTeam(code);
+      return {
+        team: code,
+        nameCN: team?.nameCN || code,
+        flag: team?.flag || '',
+        P: 0, W: 0, D: 0, L: 0, GF: 0, GA: 0, GD: 0, Pts: 0
+      };
+    });
+  }
+
+  let html = '';
+  for (const g of allGroups) {
+    const rows = buildGroupRows(g);
+    if (rows.length === 0) continue;
+
+    const hasStarted = rows.some(t => t.P > 0);
+    const headerColor = hasStarted ? 'var(--gold)' : 'var(--text-dim)';
+    const statusBadge = hasStarted ? '' : ' <span style="font-size:0.7em;color:var(--text-dim);">(未开始)</span>';
+
+    html += `<div class="standings-group-card" style="background:var(--bg-card);border-radius:var(--radius);padding:14px;border:1px solid ${hasStarted ? 'var(--border)' : 'rgba(255,255,255,0.04)'};min-width:340px;${hasStarted ? '' : 'opacity:0.55;'}">
+      <h4 style="color:${headerColor};margin-bottom:8px;font-size:0.95em;">${g}组${statusBadge}</h4>
+      <table style="width:100%;border-collapse:collapse;font-size:0.82em;">
+        <thead><tr style="color:var(--text-dim);border-bottom:1px solid var(--border-light);">
+          <th style="padding:4px 2px;text-align:left;">#</th>
+          <th style="padding:4px 2px;text-align:left;">球队</th>
+          <th style="padding:4px 2px;text-align:center;">赛</th>
+          <th style="padding:4px 2px;text-align:center;">胜</th>
+          <th style="padding:4px 2px;text-align:center;">平</th>
+          <th style="padding:4px 2px;text-align:center;">负</th>
+          <th style="padding:4px 2px;text-align:center;">GF</th>
+          <th style="padding:4px 2px;text-align:center;">GA</th>
+          <th style="padding:4px 2px;text-align:center;">GD</th>
+          <th style="padding:4px 2px;text-align:center;font-weight:bold;">分</th>
+        </tr></thead>
+        <tbody>`;
+
+    rows.forEach((t, i) => {
+      const isQualified = hasStarted && i < 2;
+      const isEliminated = hasStarted && i >= 3 && t.P > 0;
+      let rowBg = '';
+      if (isQualified) rowBg = 'background:rgba(0,200,83,0.06);';
+      else if (isEliminated) rowBg = 'background:rgba(255,23,68,0.03);';
+
+      const rankColor = isQualified ? 'var(--green)' : (hasStarted && i >= 3 ? 'var(--text-dim)' : 'var(--text-muted)');
+      const ptsColor = hasStarted ? 'var(--gold)' : 'var(--text-dim)';
+
+      html += `<tr style="${rowBg}border-bottom:1px solid var(--border);">
+        <td style="padding:4px 2px;color:${rankColor};font-weight:bold;">${i+1}</td>
+        <td style="padding:4px 2px;">${t.flag||''} <b>${t.nameCN||t.team}</b></td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.P}</td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.W}</td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.D}</td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.L}</td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.GF}</td>
+        <td style="padding:4px 2px;text-align:center;color:var(--text-dim);">${t.GA}</td>
+        <td style="padding:4px 2px;text-align:center;color:${t.GD>0?'var(--green)':t.GD<0?'var(--red)':'var(--text-dim)'}">${t.GD>0?'+'+t.GD:t.GD}</td>
+        <td style="padding:4px 2px;text-align:center;font-weight:bold;color:${ptsColor};">${t.Pts}</td>
+      </tr>`;
+    });
+
+    html += '</tbody></table></div>';
+  }
+
+  container.innerHTML = `
+    <div style="background:var(--bg-card);border-radius:var(--radius);padding:16px;margin-bottom:16px;border:1px solid var(--border);">
+      <h3 style="color:var(--gold);margin-bottom:12px;">📊 小组积分榜 <span style="font-size:0.6em;color:var(--text-dim);">(12组·48队)</span></h3>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+        ${html}
+      </div>
+      <div style="text-align:center;color:var(--text-dim);font-size:0.75em;margin-top:10px;">
+        🟢 绿色底色 = 出线区 (前2名) | GF=进球 GA=失球 GD=净胜球<br>
+        积分相同时按: 净胜球→进球→相互战绩排序 | 半透明 = 未开始
+      </div>
+    </div>`;
+}
+
+// fallback: 前端实时计算积分榜 (standings.json 不可用时)
+function computeStandingsInPlace() {
+  const groups = {};
+  const allGroups = 'ABCDEFGHIJKL';
+  for (const g of allGroups) groups[g] = {};
+
+  // 1. 从赛果计算
+  (resultsData?.results || []).forEach(r => {
+    const g = r.group || '?';
+    if (!groups[g]) return;
+    for (const [team_id, gf, ga] of [
+      [r.home, r.home_score||0, r.away_score||0],
+      [r.away, r.away_score||0, r.home_score||0]
+    ]) {
+      if (!groups[g][team_id]) {
+        const t = getTeam(team_id) || {};
+        groups[g][team_id] = {
+          team: team_id, nameCN: t.nameCN||team_id, flag: t.flag||'',
+          P:0,W:0,D:0,L:0,GF:0,GA:0,GD:0,Pts:0
+        };
+      }
+      const s = groups[g][team_id];
+      s.P++; s.GF += gf; s.GA += ga;
+      if (gf > ga) { s.W++; s.Pts += 3; }
+      else if (gf === ga) { s.D++; s.Pts += 1; }
+      else { s.L++; }
+    }
+  });
+
+  // 2. 补全未出场球队
+  (scheduleData?.matches || []).forEach(m => {
+    const g = m.group || '';
+    if (!groups[g]) return;
+    for (const tid of [m.home, m.away]) {
+      if (!groups[g][tid]) {
+        const t = getTeam(tid) || {};
+        groups[g][tid] = {
+          team: tid, nameCN: t.nameCN||tid, flag: t.flag||'',
+          P:0,W:0,D:0,L:0,GF:0,GA:0,GD:0,Pts:0
+        };
+      }
+    }
+  });
+
+  // 3. 计算净胜球并排序
+  for (const g in groups) {
+    for (const tid in groups[g]) {
+      groups[g][tid].GD = groups[g][tid].GF - groups[g][tid].GA;
+    }
+    groups[g] = Object.values(groups[g]).sort(
+      (a, b) => -a.Pts || -a.GD || -a.GF || a.nameCN.localeCompare(b.nameCN)
+    );
+  }
+
+  return groups;
 }
 
 function renderIntelligence() {
@@ -2336,12 +2617,221 @@ function initAll() {
 startCountdown();
 loadData();
 
-// 注册 Service Worker（PWA 离线缓存）
+// ================================================================
+// v3.0 实时数据流: SSE + Service Worker + 无感重载
+// ================================================================
+
+// ---- Service Worker ----
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').then(reg => {
-    console.log('✅ Service Worker 已注册:', reg.scope);
-  }).catch(err => console.log('Service Worker 注册失败:', err));
+    console.log('✅ SW 已注册:', reg.scope, 'v3');
+
+    reg.addEventListener('updatefound', () => {
+      const newWorker = reg.installing;
+      if (!newWorker) return;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+          console.log('🔄 新版本已下载');
+          showSwUpdateBanner();
+        }
+      });
+    });
+  }).catch(err => console.log('SW 注册失败:', err));
+
+  navigator.serviceWorker.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SW_UPDATED') {
+      console.log('📢 SW 已更新至:', event.data.version);
+    }
+  });
+
+  if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.ready.then(reg => {
+      if (reg.waiting) showSwUpdateBanner();
+    });
+  }
 }
+
+// ---- SSE 实时连接 ----
+let eventSource = null;
+
+function connectEventSource() {
+  if (eventSource) {
+    eventSource.close();
+    eventSource = null;
+  }
+
+  try {
+    eventSource = new EventSource('/events');
+
+    eventSource.addEventListener('connected', (e) => {
+      console.log('📡 SSE 已连接');
+      updateLiveIndicator('online', '实时监控中');
+    });
+
+    eventSource.addEventListener('data_updated', (e) => {
+      console.log('🔄 守护进程通知: 数据已更新');
+      updateLiveIndicator('updating', '数据更新中...');
+      reloadData();
+      showToast('📊 数据已实时刷新', '');
+    });
+
+    eventSource.addEventListener('new_result', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        showToast(`⚽ ${data.home||'?'} ${data.home_score||0}:${data.away_score||0} ${data.away||'?'} 赛果更新`, 'goal');
+      } catch(_) {}
+    });
+
+    eventSource.addEventListener('param_optimized', (e) => {
+      showToast('🧠 模型参数已自动优化', '');
+    });
+
+    eventSource.addEventListener('heartbeat', (e) => {
+      updateLiveIndicator('online', '实时监控中');
+    });
+
+    eventSource.addEventListener('pipeline_error', (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        showToast('⚠️ 数据管道异常: ' + (data.error||'未知错误'), 'warn');
+      } catch(_) {}
+    });
+
+    eventSource.onerror = () => {
+      updateLiveIndicator('offline', '离线模式');
+      eventSource.close();
+      eventSource = null;
+      // 10秒后重连
+      setTimeout(connectEventSource, 10000);
+    };
+
+  } catch(e) {
+    // SSE 不可用 (file:// 协议或无服务器)
+    console.log('📡 SSE 不可用，使用离线模式');
+    updateLiveIndicator('offline', '离线模式');
+  }
+}
+
+// ---- 无感数据重载 ----
+let reloadLock = false;
+
+async function reloadData() {
+  if (reloadLock) return;
+  reloadLock = true;
+
+  try {
+    // 重新拉取 bundle.js
+    const resp = await fetch('data/bundle.js?_=' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const text = await resp.text();
+
+    // 安全执行 bundle 代码，提取数据
+    const fn = new Function(text + '; return window.__WORLDCUP_DATA;');
+    const d = fn();
+
+    if (!d || !d.teams) throw new Error('数据格式异常');
+
+    // 更新全局变量
+    teamsData = d.teams;
+    scheduleData = d.schedule;
+    oddsData = d.odds;
+    h2hData = d.h2h;
+    predictionsData = d.predictions;
+    resultsData = d.results;
+    standingsData = d.standings || null;
+    intelligenceData = d.intelligence || null;
+    playersData = d.players || null;
+    stadiumsData = d.stadiums || null;
+
+    // 更新数据时间
+    document.getElementById('updateTime').textContent =
+      '数据更新: ' + (teamsData._meta?.updated || '实时');
+
+    // 重渲染当前活动 Tab
+    const activeTab = document.querySelector('.nav-tab.active');
+    if (activeTab) {
+      const tabName = activeTab.dataset.tab;
+      if (tabName === 'groups') renderGroups();
+      else if (tabName === 'upsets') renderUpsets();
+      else if (tabName === 'accuracy') renderAccuracy();
+      else if (tabName === 'matchup') initMatchupTab();
+      else if (tabName === 'betting') initBettingTab();
+      else if (tabName === 'schedule') renderSchedule();
+      else if (tabName === 'news') renderNewsCenter();
+    }
+
+    updateLiveIndicator('online', '实时监控中');
+    console.log('✅ 数据已无感刷新');
+  } catch (err) {
+    console.error('数据重载失败:', err);
+    updateLiveIndicator('offline', '离线模式');
+  } finally {
+    reloadLock = false;
+  }
+}
+
+// ---- 实时状态指示灯 ----
+function updateLiveIndicator(status, text) {
+  const dot = document.getElementById('liveDot');
+  const label = document.getElementById('liveStatusText');
+  if (!dot || !label) return;
+
+  dot.className = status;
+  label.textContent = text || '';
+
+  // 在线时自动隐藏，离线时保持显示
+  const bar = document.getElementById('liveStatusBar');
+  if (bar) {
+    if (status === 'online') {
+      setTimeout(() => { bar.style.opacity = '0'; }, 5000);
+    } else {
+      bar.style.opacity = '1';
+    }
+  }
+}
+
+// ---- Toast 通知 ----
+function showToast(message, type) {
+  const container = document.getElementById('toastContainer');
+  if (!container) return;
+
+  const toast = document.createElement('div');
+  toast.className = 'toast ' + (type || '');
+  toast.textContent = message;
+  toast.addEventListener('click', () => toast.remove());
+  container.appendChild(toast);
+
+  // 3秒后自动移除
+  setTimeout(() => {
+    if (toast.parentNode) toast.remove();
+  }, 3200);
+}
+
+// ---- SW 更新提示横幅 ----
+function showSwUpdateBanner() {
+  if (document.getElementById('swUpdateBanner')) return;
+  const banner = document.createElement('div');
+  banner.id = 'swUpdateBanner';
+  banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(135deg,#ff6b00,#e63900);color:#fff;text-align:center;padding:10px 16px;font-size:0.9em;cursor:pointer;animation:slideDown 0.3s ease;box-shadow:0 2px 12px rgba(0,0,0,0.4);';
+  banner.innerHTML = '🔄 <strong>新版本已就绪</strong> — 点击此处刷新页面查看最新赛况和积分榜';
+  banner.addEventListener('click', () => {
+    navigator.serviceWorker.ready.then(reg => {
+      if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+    });
+    window.location.reload();
+  });
+  document.body.prepend(banner);
+
+  if (!document.getElementById('swUpdateBannerStyle')) {
+    const style = document.createElement('style');
+    style.id = 'swUpdateBannerStyle';
+    style.textContent = '@keyframes slideDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}';
+    document.head.appendChild(style);
+  }
+}
+
+// ---- 启动实时连接 ----
+connectEventSource();
 
 // 全局触摸：点击空白区域关闭球员 tooltip
 document.addEventListener('touchstart', function(e) {

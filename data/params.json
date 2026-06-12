@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "updated": "2026-06-12",
+    "version": "3.0"
+  },
+  "params": {
+    "BLEND": 0.775,
+    "BASE_GOALS": 2.35,
+    "HOME_ADVANTAGE": 21,
+    "ELO_K": 32,
+    "RHO": 0.001,
+    "REST_WEIGHT": 0.005,
+    "TRAVEL_WEIGHT": 0.0025,
+    "FORM_WEIGHT": 0.02,
+    "W_FIFA": 0.15,
+    "W_ELO": 0.2,
+    "W_OPTA": 0.2,
+    "W_ODDS": 0.15,
+    "W_MV": 0.1,
+    "W_H2H": 0.2
+  }
+}

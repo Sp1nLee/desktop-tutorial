@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "description": "系统预测记录 — Composite Index + Elo Poisson Model",
+    "description": "Composite Index + Elo Poisson Model",
     "version": "2.0",
     "algorithm": "Composite Index + Elo Poisson Model v1.0",
-    "generatedAt": "2026-06-03",
+    "generatedAt": "2026-06-12",
     "totalPredicted": 72,
     "pendingKnockout": 32
   },
@@ -22,72 +22,72 @@
       "date": "2026-06-11",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.85,
-        "away": 1.1
+        "home": 1.91,
+        "away": 1.03
       },
       "totalGoalsExpected": 2.94,
       "probabilities": {
-        "homeWin": 0.5481,
-        "draw": 0.2272,
-        "awayWin": 0.224,
-        "over25": 0.5637,
-        "under25": 0.4363
+        "homeWin": 0.5786,
+        "draw": 0.2204,
+        "awayWin": 0.2002,
+        "over25": 0.5635,
+        "under25": 0.4365
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1067
-        },
-        {
-          "score": "2:1",
-          "prob": 0.0985
+          "prob": 0.1038
         },
         {
           "score": "1:0",
-          "prob": 0.0971
+          "prob": 0.1006
+        },
+        {
+          "score": "2:1",
+          "prob": 0.0993
         },
         {
           "score": "2:0",
-          "prob": 0.0897
+          "prob": 0.0963
         },
         {
           "score": "3:1",
-          "prob": 0.0606
+          "prob": 0.0633
         }
       ],
       "htftProb": {
-        "主/主": 0.3396,
-        "平/主": 0.1708,
-        "平/平": 0.1358,
-        "客/客": 0.1279,
-        "平/客": 0.0844,
-        "主/平": 0.0496,
-        "客/平": 0.0496,
-        "客/主": 0.0275,
-        "主/客": 0.015
+        "主/主": 0.362,
+        "平/主": 0.1776,
+        "平/平": 0.1332,
+        "客/客": 0.1137,
+        "平/客": 0.0769,
+        "客/平": 0.0477,
+        "主/平": 0.0477,
+        "客/主": 0.0277,
+        "主/客": 0.0135
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "墨西哥胜",
-          "probability": 0.5481,
+          "probability": 0.5786,
           "confidence": 4,
           "riskLevel": "稳健",
-          "recommendation": "可考虑"
+          "recommendation": "重点推荐"
         },
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（墨西哥让0.5球）",
-          "probability": 0.5481,
+          "pickLabel": "主队-0.5",
+          "probability": 0.5786,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -95,8 +95,8 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
-          "probability": 0.5637,
+          "pickLabel": "大球2.5",
+          "probability": 0.5635,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -106,26 +106,26 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1067
-            },
-            {
-              "score": "2:1",
-              "prob": 0.0985
+              "prob": 0.1038
             },
             {
               "score": "1:0",
-              "prob": 0.0971
+              "prob": 0.1006
+            },
+            {
+              "score": "2:1",
+              "prob": 0.0993
             }
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "墨西哥/墨西哥",
-          "probability": 0.3396,
+          "pickLabel": "主/主",
+          "probability": 0.362,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -134,14 +134,19 @@
       "inputs": {
         "compositeHome": 55,
         "compositeAway": 35,
-        "eloHome": 1850,
-        "eloAway": 1720,
+        "eloHome": 1867,
+        "eloAway": 1703,
         "h2hAvailable": true,
         "h2hMatches": 4,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
-      "correct": null,
-      "accuracy": null
+      "correct": false,
+      "accuracy": {
+        "outcomeCorrect": false,
+        "exactScoreCorrect": false,
+        "goalDiffCorrect": false,
+        "over25Correct": true
+      }
     },
     {
       "matchId": "A2",
@@ -150,36 +155,36 @@
       "date": "2026-06-11",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.32,
-        "away": 1.1
+        "home": 1.38,
+        "away": 1.04
       },
       "totalGoalsExpected": 2.42,
       "probabilities": {
-        "homeWin": 0.4159,
-        "draw": 0.2732,
-        "awayWin": 0.3108,
+        "homeWin": 0.4468,
+        "draw": 0.2703,
+        "awayWin": 0.2828,
         "over25": 0.4354,
         "under25": 0.5646
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1291
+          "prob": 0.1276
         },
         {
           "score": "1:0",
-          "prob": 0.1173
+          "prob": 0.1228
         },
         {
           "score": "0:1",
-          "prob": 0.0979
+          "prob": 0.0924
         },
         {
           "score": "0:0",
@@ -187,43 +192,43 @@
         },
         {
           "score": "2:1",
-          "prob": 0.0852
+          "prob": 0.0881
         }
       ],
       "htftProb": {
-        "主/主": 0.243,
-        "平/平": 0.177,
-        "客/客": 0.1762,
-        "平/主": 0.1499,
-        "平/客": 0.1183,
-        "主/平": 0.0501,
-        "客/平": 0.0501,
-        "客/主": 0.0196,
-        "主/客": 0.0159
+        "主/主": 0.2634,
+        "平/平": 0.1758,
+        "客/客": 0.1591,
+        "平/主": 0.1587,
+        "平/客": 0.1094,
+        "客/平": 0.0493,
+        "主/平": 0.0493,
+        "客/主": 0.0204,
+        "主/客": 0.0147
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "韩国胜",
-          "probability": 0.4159,
+          "probability": 0.4468,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
         },
         "handicap": {
           "market": "让球胜平负",
-          "pick": "平手",
-          "pickLabel": "平手盘",
-          "probability": 0.4159,
+          "pick": "主队-0/0.5",
+          "pickLabel": "主队-0/0.5",
+          "probability": 0.4468,
           "confidence": 3,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5646,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -234,42 +239,47 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1291
+              "prob": 0.1276
             },
             {
               "score": "1:0",
-              "prob": 0.1173
+              "prob": 0.1228
             },
             {
               "score": "0:1",
-              "prob": 0.0979
+              "prob": 0.0924
             }
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "韩国/韩国",
-          "probability": 0.243,
+          "pickLabel": "主/主",
+          "probability": 0.2634,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
-        "compositeHome": 47,
+        "compositeHome": 48,
         "compositeAway": 46,
-        "eloHome": 1810,
-        "eloAway": 1795,
+        "eloHome": 1824,
+        "eloAway": 1781,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
-      "correct": null,
-      "accuracy": null
+      "correct": false,
+      "accuracy": {
+        "outcomeCorrect": false,
+        "exactScoreCorrect": false,
+        "goalDiffCorrect": false,
+        "over25Correct": false
+      }
     },
     {
       "matchId": "A3",
@@ -278,7 +288,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -290,9 +300,9 @@
       },
       "totalGoalsExpected": 2.6,
       "probabilities": {
-        "homeWin": 0.5075,
+        "homeWin": 0.5077,
         "draw": 0.251,
-        "awayWin": 0.2412,
+        "awayWin": 0.241,
         "over25": 0.4813,
         "under25": 0.5187
       },
@@ -311,7 +321,7 @@
         },
         {
           "score": "2:0",
-          "prob": 0.0937
+          "prob": 0.0938
         },
         {
           "score": "0:1",
@@ -319,11 +329,11 @@
         }
       ],
       "htftProb": {
-        "主/主": 0.307,
+        "主/主": 0.3071,
         "平/主": 0.1703,
         "平/平": 0.159,
-        "客/客": 0.1355,
-        "平/客": 0.0936,
+        "客/客": 0.1354,
+        "平/客": 0.0935,
         "主/平": 0.0487,
         "客/平": 0.0487,
         "客/主": 0.0234,
@@ -334,7 +344,7 @@
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "捷克胜",
-          "probability": 0.5075,
+          "probability": 0.5077,
           "confidence": 3,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -342,8 +352,8 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（捷克让0.25球）",
-          "probability": 0.5075,
+          "pickLabel": "主队-0/0.5",
+          "probability": 0.5077,
           "confidence": 3,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -351,7 +361,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5187,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -375,26 +385,26 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "捷克/捷克",
-          "probability": 0.307,
+          "pickLabel": "主/主",
+          "probability": 0.3071,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
         }
       },
       "inputs": {
-        "compositeHome": 46,
+        "compositeHome": 45,
         "compositeAway": 38,
-        "eloHome": 1795,
-        "eloAway": 1720,
+        "eloHome": 1781,
+        "eloAway": 1703,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -406,40 +416,40 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.77,
-        "away": 0.99
+        "home": 1.78,
+        "away": 0.98
       },
       "totalGoalsExpected": 2.76,
       "probabilities": {
-        "homeWin": 0.5569,
-        "draw": 0.2334,
-        "awayWin": 0.2092,
+        "homeWin": 0.5601,
+        "draw": 0.2326,
+        "awayWin": 0.2067,
         "over25": 0.5198,
         "under25": 0.4802
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1123
+          "prob": 0.1127
         },
         {
           "score": "1:1",
-          "prob": 0.1109
+          "prob": 0.1106
         },
         {
           "score": "2:0",
-          "prob": 0.0994
+          "prob": 0.1001
         },
         {
           "score": "2:1",
-          "prob": 0.0981
+          "prob": 0.0982
         },
         {
           "score": "0:0",
@@ -447,22 +457,22 @@
         }
       ],
       "htftProb": {
-        "主/主": 0.344,
-        "平/主": 0.178,
-        "平/平": 0.1452,
-        "客/客": 0.1177,
-        "平/客": 0.0815,
-        "客/平": 0.0474,
-        "主/平": 0.0474,
+        "主/主": 0.3464,
+        "平/主": 0.1787,
+        "平/平": 0.1449,
+        "客/客": 0.1162,
+        "平/客": 0.0807,
+        "主/平": 0.0472,
+        "客/平": 0.0472,
         "客/主": 0.0257,
-        "主/客": 0.013
+        "主/客": 0.0129
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "墨西哥胜",
-          "probability": 0.5569,
+          "probability": 0.5601,
           "confidence": 5,
           "riskLevel": "稳健",
           "recommendation": "重点推荐"
@@ -470,8 +480,8 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（墨西哥让0.5球）",
-          "probability": 0.5569,
+          "pickLabel": "主队-0.5",
+          "probability": 0.5601,
           "confidence": 5,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -479,7 +489,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5198,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -490,26 +500,26 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1123
+              "prob": 0.1127
             },
             {
               "score": "1:1",
-              "prob": 0.1109
+              "prob": 0.1106
             },
             {
               "score": "2:0",
-              "prob": 0.0994
+              "prob": 0.1001
             }
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "墨西哥/墨西哥",
-          "probability": 0.344,
+          "pickLabel": "主/主",
+          "probability": 0.3464,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -518,8 +528,8 @@
       "inputs": {
         "compositeHome": 57,
         "compositeAway": 43,
-        "eloHome": 1850,
-        "eloAway": 1810,
+        "eloHome": 1867,
+        "eloAway": 1824,
         "h2hAvailable": true,
         "h2hMatches": 8,
         "styleMatchup": "克制"
@@ -534,63 +544,63 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.35,
-        "away": 1.25
+        "home": 1.28,
+        "away": 1.32
       },
       "totalGoalsExpected": 2.6,
       "probabilities": {
-        "homeWin": 0.3932,
-        "draw": 0.2635,
-        "awayWin": 0.3433,
+        "homeWin": 0.3581,
+        "draw": 0.2638,
+        "awayWin": 0.3779,
         "over25": 0.4814,
         "under25": 0.5186
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1253
-        },
-        {
-          "score": "1:0",
-          "prob": 0.1005
+          "prob": 0.1255
         },
         {
           "score": "0:1",
-          "prob": 0.0926
+          "prob": 0.0981
         },
         {
-          "score": "2:1",
-          "prob": 0.0848
+          "score": "1:0",
+          "prob": 0.095
         },
         {
           "score": "1:2",
-          "prob": 0.0781
+          "prob": 0.0829
+        },
+        {
+          "score": "2:1",
+          "prob": 0.0802
         }
       ],
       "htftProb": {
-        "主/主": 0.23,
-        "客/客": 0.1981,
-        "平/平": 0.1639,
-        "平/主": 0.1394,
-        "平/客": 0.125,
-        "主/平": 0.0521,
-        "客/平": 0.0521,
-        "客/主": 0.0206,
-        "主/客": 0.0187
+        "客/客": 0.2202,
+        "主/主": 0.2075,
+        "平/平": 0.164,
+        "平/客": 0.1351,
+        "平/主": 0.1293,
+        "主/平": 0.0522,
+        "客/平": 0.0522,
+        "主/客": 0.0201,
+        "客/主": 0.0193
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
-          "pick": "主胜",
-          "pickLabel": "捷克胜",
-          "probability": 0.3932,
+          "pick": "客胜",
+          "pickLabel": "墨西哥胜",
+          "probability": 0.3779,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -598,16 +608,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
-          "probability": 0.3932,
+          "pickLabel": "平手",
+          "probability": 0.3779,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -618,36 +628,36 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1253
-            },
-            {
-              "score": "1:0",
-              "prob": 0.1005
+              "prob": 0.1255
             },
             {
               "score": "0:1",
-              "prob": 0.0926
+              "prob": 0.0981
+            },
+            {
+              "score": "1:0",
+              "prob": 0.095
             }
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
-          "pick": "主/主",
-          "pickLabel": "捷克/捷克",
-          "probability": 0.23,
+          "pick": "客/客",
+          "pickLabel": "客/客",
+          "probability": 0.2202,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
-        "compositeHome": 46,
+        "compositeHome": 45,
         "compositeAway": 52,
-        "eloHome": 1795,
-        "eloAway": 1850,
+        "eloHome": 1781,
+        "eloAway": 1867,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "styleMatchup": "克制"
@@ -662,40 +672,40 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
         "away": 1
       },
       "expectedGoals": {
-        "home": 0.91,
-        "away": 1.51
+        "home": 0.85,
+        "away": 1.57
       },
       "totalGoalsExpected": 2.42,
       "probabilities": {
-        "homeWin": 0.2262,
-        "draw": 0.2598,
-        "awayWin": 0.5138,
+        "homeWin": 0.2013,
+        "draw": 0.253,
+        "awayWin": 0.5454,
         "over25": 0.4353,
         "under25": 0.5647
       },
       "topScores": [
         {
           "score": "0:1",
-          "prob": 0.1345
+          "prob": 0.14
         },
         {
           "score": "1:1",
-          "prob": 0.1221
+          "prob": 0.1184
         },
         {
           "score": "0:2",
-          "prob": 0.1017
+          "prob": 0.1102
         },
         {
           "score": "1:2",
-          "prob": 0.0923
+          "prob": 0.0932
         },
         {
           "score": "0:0",
@@ -703,31 +713,31 @@
         }
       ],
       "htftProb": {
-        "客/客": 0.3094,
-        "平/客": 0.1772,
-        "平/平": 0.1717,
-        "主/主": 0.1247,
-        "平/主": 0.0908,
-        "客/平": 0.0465,
-        "主/平": 0.0462,
-        "主/客": 0.0214,
-        "客/主": 0.012
+        "客/客": 0.3318,
+        "平/客": 0.1854,
+        "平/平": 0.169,
+        "主/主": 0.1102,
+        "平/主": 0.0823,
+        "客/平": 0.0446,
+        "主/平": 0.0444,
+        "主/客": 0.0217,
+        "客/主": 0.0106
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "客胜",
           "pickLabel": "韩国胜",
-          "probability": 0.5138,
+          "probability": 0.5454,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
         },
         "handicap": {
           "market": "让球胜平负",
-          "pick": "客队-0/0.5",
-          "pickLabel": "客队-0/0.5（韩国让0.25球）",
-          "probability": 0.5138,
+          "pick": "客队-0.5",
+          "pickLabel": "客队-0.5",
+          "probability": 0.5454,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -735,7 +745,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5647,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -746,26 +756,26 @@
           "picks": [
             {
               "score": "0:1",
-              "prob": 0.1345
+              "prob": 0.14
             },
             {
               "score": "1:1",
-              "prob": 0.1221
+              "prob": 0.1184
             },
             {
               "score": "0:2",
-              "prob": 0.1017
+              "prob": 0.1102
             }
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "韩国/韩国",
-          "probability": 0.3094,
+          "pickLabel": "客/客",
+          "probability": 0.3318,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -774,11 +784,11 @@
       "inputs": {
         "compositeHome": 37,
         "compositeAway": 49,
-        "eloHome": 1720,
-        "eloAway": 1810,
+        "eloHome": 1703,
+        "eloAway": 1824,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -790,7 +800,7 @@
       "date": "2026-06-12",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -854,16 +864,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4251,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -887,12 +897,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "加拿大/加拿大",
+          "pickLabel": "主/主",
           "probability": 0.251,
           "confidence": 1,
           "riskLevel": "进取",
@@ -906,7 +916,7 @@
         "eloAway": 1740,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -918,7 +928,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -982,7 +992,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5/1",
-          "pickLabel": "客队-0.5/1（瑞士让0.75球）",
+          "pickLabel": "客队-0.5/1",
           "probability": 0.7434,
           "confidence": 5,
           "riskLevel": "保守",
@@ -991,7 +1001,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5095,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1015,12 +1025,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "瑞士/瑞士",
+          "pickLabel": "客/客",
           "probability": 0.4938,
           "confidence": 3,
           "riskLevel": "进取",
@@ -1034,7 +1044,7 @@
         "eloAway": 1910,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1046,7 +1056,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -1110,7 +1120,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（瑞士让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.6701,
           "confidence": 5,
           "riskLevel": "保守",
@@ -1119,7 +1129,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5102,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1143,12 +1153,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "瑞士/瑞士",
+          "pickLabel": "主/主",
           "probability": 0.4308,
           "confidence": 3,
           "riskLevel": "进取",
@@ -1162,7 +1172,7 @@
         "eloAway": 1740,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1174,7 +1184,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -1238,7 +1248,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（加拿大让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6568,
           "confidence": 5,
           "riskLevel": "保守",
@@ -1247,7 +1257,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5651,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1271,12 +1281,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "加拿大/加拿大",
+          "pickLabel": "主/主",
           "probability": 0.4158,
           "confidence": 3,
           "riskLevel": "进取",
@@ -1302,7 +1312,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -1366,7 +1376,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（瑞士让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.4732,
           "confidence": 3,
           "riskLevel": "进取",
@@ -1375,7 +1385,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -1399,12 +1409,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "瑞士/瑞士",
+          "pickLabel": "主/主",
           "probability": 0.2833,
           "confidence": 1,
           "riskLevel": "进取",
@@ -1418,7 +1428,7 @@
         "eloAway": 1800,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1430,7 +1440,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -1494,16 +1504,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4281,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -1527,12 +1537,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "波黑/波黑",
+          "pickLabel": "主/主",
           "probability": 0.253,
           "confidence": 1,
           "riskLevel": "进取",
@@ -1546,7 +1556,7 @@
         "eloAway": 1670,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1558,7 +1568,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -1622,7 +1632,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（巴西让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.5454,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1631,7 +1641,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5108,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1655,12 +1665,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "巴西/巴西",
+          "pickLabel": "主/主",
           "probability": 0.3353,
           "confidence": 2,
           "riskLevel": "进取",
@@ -1674,7 +1684,7 @@
         "eloAway": 1930,
         "h2hAvailable": true,
         "h2hMatches": 3,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1686,7 +1696,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -1750,7 +1760,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（苏格兰让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5559,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1759,7 +1769,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5188,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -1783,12 +1793,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "苏格兰/苏格兰",
+          "pickLabel": "客/客",
           "probability": 0.3414,
           "confidence": 1,
           "riskLevel": "进取",
@@ -1802,7 +1812,7 @@
         "eloAway": 1770,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1814,7 +1824,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -1878,7 +1888,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（摩洛哥让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5762,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1887,7 +1897,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5107,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -1911,12 +1921,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "摩洛哥/摩洛哥",
+          "pickLabel": "客/客",
           "probability": 0.3577,
           "confidence": 2,
           "riskLevel": "进取",
@@ -1930,7 +1940,7 @@
         "eloAway": 1930,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -1942,7 +1952,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -2006,7 +2016,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-1",
-          "pickLabel": "主队-1（巴西让1.0球）",
+          "pickLabel": "主队-1",
           "probability": 0.805,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2015,7 +2025,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.691,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2039,12 +2049,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "巴西/巴西",
+          "pickLabel": "主/主",
           "probability": 0.5688,
           "confidence": 4,
           "riskLevel": "进取",
@@ -2070,7 +2080,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -2134,7 +2144,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（巴西让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.6402,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2143,7 +2153,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5342,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2167,12 +2177,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "巴西/巴西",
+          "pickLabel": "客/客",
           "probability": 0.4043,
           "confidence": 3,
           "riskLevel": "进取",
@@ -2198,7 +2208,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -2262,7 +2272,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（摩洛哥让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7371,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2271,7 +2281,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -2295,12 +2305,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "摩洛哥/摩洛哥",
+          "pickLabel": "主/主",
           "probability": 0.4859,
           "confidence": 3,
           "riskLevel": "进取",
@@ -2314,7 +2324,7 @@
         "eloAway": 1600,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -2326,7 +2336,7 @@
       "date": "2026-06-12",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -2390,7 +2400,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（美国让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.5473,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2399,7 +2409,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5339,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2423,12 +2433,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "美国/美国",
+          "pickLabel": "主/主",
           "probability": 0.3347,
           "confidence": 2,
           "riskLevel": "进取",
@@ -2454,7 +2464,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -2518,16 +2528,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4251,
           "confidence": 3,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.6443,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2551,16 +2561,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "土耳其/土耳其",
+          "pickLabel": "客/客",
           "probability": 0.2452,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -2582,7 +2592,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -2646,16 +2656,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.425,
           "confidence": 3,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5388,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2679,12 +2689,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "美国/美国",
+          "pickLabel": "主/主",
           "probability": 0.25,
           "confidence": 1,
           "riskLevel": "进取",
@@ -2698,7 +2708,7 @@
         "eloAway": 1785,
         "h2hAvailable": true,
         "h2hMatches": 3,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -2710,7 +2720,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -2774,7 +2784,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（土耳其让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.4884,
           "confidence": 3,
           "riskLevel": "进取",
@@ -2783,7 +2793,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.6041,
           "confidence": 5,
           "riskLevel": "保守",
@@ -2807,12 +2817,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "土耳其/土耳其",
+          "pickLabel": "主/主",
           "probability": 0.2899,
           "confidence": 1,
           "riskLevel": "进取",
@@ -2826,7 +2836,7 @@
         "eloAway": 1790,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -2838,7 +2848,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -2902,7 +2912,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（土耳其让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.5158,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2911,7 +2921,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5137,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -2935,12 +2945,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "土耳其/土耳其",
+          "pickLabel": "主/主",
           "probability": 0.313,
           "confidence": 2,
           "riskLevel": "进取",
@@ -2966,7 +2976,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -3030,16 +3040,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4076,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3063,16 +3073,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "巴拉圭/巴拉圭",
+          "pickLabel": "主/主",
           "probability": 0.2395,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -3082,7 +3092,7 @@
         "eloAway": 1785,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3094,7 +3104,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -3158,7 +3168,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（德国让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -3167,7 +3177,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3191,12 +3201,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "德国/德国",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 3,
           "riskLevel": "进取",
@@ -3210,7 +3220,7 @@
         "eloAway": 1620,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3222,7 +3232,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -3286,16 +3296,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4099,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3319,16 +3329,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "厄瓜多尔/厄瓜多尔",
+          "pickLabel": "客/客",
           "probability": 0.241,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -3338,7 +3348,7 @@
         "eloAway": 1885,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3350,7 +3360,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -3414,7 +3424,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（德国让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.5882,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -3423,7 +3433,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5189,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3447,12 +3457,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "德国/德国",
+          "pickLabel": "主/主",
           "probability": 0.3655,
           "confidence": 2,
           "riskLevel": "进取",
@@ -3466,7 +3476,7 @@
         "eloAway": 1820,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3478,7 +3488,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -3542,7 +3552,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（厄瓜多尔让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.6946,
           "confidence": 5,
           "riskLevel": "保守",
@@ -3551,7 +3561,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5195,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3575,12 +3585,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "厄瓜多尔/厄瓜多尔",
+          "pickLabel": "主/主",
           "probability": 0.449,
           "confidence": 2,
           "riskLevel": "进取",
@@ -3594,7 +3604,7 @@
         "eloAway": 1620,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3606,7 +3616,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -3670,7 +3680,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5/1",
-          "pickLabel": "客队-0.5/1（德国让0.75球）",
+          "pickLabel": "客队-0.5/1",
           "probability": 0.6662,
           "confidence": 5,
           "riskLevel": "保守",
@@ -3679,7 +3689,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.6116,
           "confidence": 5,
           "riskLevel": "保守",
@@ -3703,12 +3713,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "德国/德国",
+          "pickLabel": "客/客",
           "probability": 0.4328,
           "confidence": 3,
           "riskLevel": "进取",
@@ -3722,7 +3732,7 @@
         "eloAway": 2030,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3734,7 +3744,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -3798,7 +3808,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（科特迪瓦让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5913,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -3807,7 +3817,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5189,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3831,12 +3841,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "科特迪瓦/科特迪瓦",
+          "pickLabel": "客/客",
           "probability": 0.3678,
           "confidence": 2,
           "riskLevel": "进取",
@@ -3850,7 +3860,7 @@
         "eloAway": 1820,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3862,7 +3872,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -3926,7 +3936,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（荷兰让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6125,
           "confidence": 4,
           "riskLevel": "保守",
@@ -3935,7 +3945,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5105,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -3959,12 +3969,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "荷兰/荷兰",
+          "pickLabel": "主/主",
           "probability": 0.3855,
           "confidence": 2,
           "riskLevel": "进取",
@@ -3978,7 +3988,7 @@
         "eloAway": 1880,
         "h2hAvailable": true,
         "h2hMatches": 3,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -3990,7 +4000,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4054,7 +4064,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（瑞典让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.4866,
           "confidence": 3,
           "riskLevel": "进取",
@@ -4063,7 +4073,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5909,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4087,12 +4097,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "瑞典/瑞典",
+          "pickLabel": "主/主",
           "probability": 0.2893,
           "confidence": 1,
           "riskLevel": "进取",
@@ -4106,7 +4116,7 @@
         "eloAway": 1765,
         "h2hAvailable": true,
         "h2hMatches": 3,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -4118,7 +4128,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -4182,7 +4192,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（荷兰让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7028,
           "confidence": 5,
           "riskLevel": "保守",
@@ -4191,7 +4201,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5453,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4215,12 +4225,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "荷兰/荷兰",
+          "pickLabel": "主/主",
           "probability": 0.4602,
           "confidence": 3,
           "riskLevel": "进取",
@@ -4246,7 +4256,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4310,16 +4320,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.429,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5452,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -4343,12 +4353,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "日本/日本",
+          "pickLabel": "客/客",
           "probability": 0.2524,
           "confidence": 1,
           "riskLevel": "进取",
@@ -4374,7 +4384,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4438,7 +4448,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（日本让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.5211,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4447,7 +4457,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5109,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4471,12 +4481,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "日本/日本",
+          "pickLabel": "主/主",
           "probability": 0.3179,
           "confidence": 2,
           "riskLevel": "进取",
@@ -4502,7 +4512,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -4566,7 +4576,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（荷兰让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5651,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4575,7 +4585,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5648,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4599,12 +4609,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "荷兰/荷兰",
+          "pickLabel": "客/客",
           "probability": 0.346,
           "confidence": 1,
           "riskLevel": "进取",
@@ -4630,7 +4640,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4694,7 +4704,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（比利时让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6327,
           "confidence": 5,
           "riskLevel": "保守",
@@ -4703,7 +4713,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5343,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4727,12 +4737,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "比利时/比利时",
+          "pickLabel": "主/主",
           "probability": 0.4019,
           "confidence": 3,
           "riskLevel": "进取",
@@ -4746,7 +4756,7 @@
         "eloAway": 1815,
         "h2hAvailable": true,
         "h2hMatches": 3,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -4758,7 +4768,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4822,7 +4832,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（伊朗让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.6698,
           "confidence": 5,
           "riskLevel": "保守",
@@ -4831,7 +4841,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5102,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -4855,12 +4865,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "伊朗/伊朗",
+          "pickLabel": "主/主",
           "probability": 0.4306,
           "confidence": 3,
           "riskLevel": "进取",
@@ -4874,7 +4884,7 @@
         "eloAway": 1650,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -4886,7 +4896,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -4950,7 +4960,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（比利时让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6035,
           "confidence": 4,
           "riskLevel": "保守",
@@ -4959,7 +4969,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.519,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -4983,12 +4993,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "比利时/比利时",
+          "pickLabel": "主/主",
           "probability": 0.377,
           "confidence": 2,
           "riskLevel": "进取",
@@ -5002,7 +5012,7 @@
         "eloAway": 1820,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5014,7 +5024,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -5078,7 +5088,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（埃及让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5487,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5087,7 +5097,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5188,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5111,12 +5121,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "埃及/埃及",
+          "pickLabel": "客/客",
           "probability": 0.3362,
           "confidence": 1,
           "riskLevel": "进取",
@@ -5130,7 +5140,7 @@
         "eloAway": 1815,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5142,7 +5152,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -5206,16 +5216,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.3649,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5646,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -5239,16 +5249,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "埃及/埃及",
+          "pickLabel": "主/主",
           "probability": 0.2101,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -5258,7 +5268,7 @@
         "eloAway": 1820,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5270,7 +5280,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -5334,7 +5344,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5/1",
-          "pickLabel": "客队-0.5/1（比利时让0.75球）",
+          "pickLabel": "客队-0.5/1",
           "probability": 0.7112,
           "confidence": 5,
           "riskLevel": "保守",
@@ -5343,7 +5353,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5196,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5367,12 +5377,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "比利时/比利时",
+          "pickLabel": "客/客",
           "probability": 0.4637,
           "confidence": 3,
           "riskLevel": "进取",
@@ -5386,7 +5396,7 @@
         "eloAway": 1990,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5398,7 +5408,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -5462,7 +5472,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（西班牙让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -5471,7 +5481,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5495,12 +5505,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "西班牙/西班牙",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 3,
           "riskLevel": "进取",
@@ -5514,7 +5524,7 @@
         "eloAway": 1630,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5526,7 +5536,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -5590,7 +5600,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5/1",
-          "pickLabel": "客队-0.5/1（乌拉圭让0.75球）",
+          "pickLabel": "客队-0.5/1",
           "probability": 0.7168,
           "confidence": 5,
           "riskLevel": "保守",
@@ -5599,7 +5609,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5271,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -5623,12 +5633,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "乌拉圭/乌拉圭",
+          "pickLabel": "客/客",
           "probability": 0.4679,
           "confidence": 3,
           "riskLevel": "进取",
@@ -5642,7 +5652,7 @@
         "eloAway": 1940,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5654,7 +5664,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -5718,7 +5728,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（西班牙让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.733,
           "confidence": 5,
           "riskLevel": "保守",
@@ -5727,7 +5737,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5751,12 +5761,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "西班牙/西班牙",
+          "pickLabel": "主/主",
           "probability": 0.4824,
           "confidence": 3,
           "riskLevel": "进取",
@@ -5770,7 +5780,7 @@
         "eloAway": 1700,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -5782,7 +5792,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -5846,7 +5856,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（乌拉圭让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -5855,7 +5865,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -5879,12 +5889,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "乌拉圭/乌拉圭",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 3,
           "riskLevel": "进取",
@@ -5910,7 +5920,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -5974,16 +5984,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4156,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -6007,16 +6017,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "沙特/沙特",
+          "pickLabel": "客/客",
           "probability": 0.2447,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -6026,7 +6036,7 @@
         "eloAway": 1700,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6038,7 +6048,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -6102,7 +6112,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0/0.5",
-          "pickLabel": "客队-0/0.5（西班牙让0.25球）",
+          "pickLabel": "客队-0/0.5",
           "probability": 0.5246,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -6111,7 +6121,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5228,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -6135,12 +6145,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "西班牙/西班牙",
+          "pickLabel": "客/客",
           "probability": 0.3188,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6166,7 +6176,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -6230,7 +6240,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（法国让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.5772,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -6239,7 +6249,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.6444,
           "confidence": 4,
           "riskLevel": "保守",
@@ -6263,12 +6273,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "法国/法国",
+          "pickLabel": "主/主",
           "probability": 0.3496,
           "confidence": 1,
           "riskLevel": "进取",
@@ -6282,7 +6292,7 @@
         "eloAway": 1900,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6294,7 +6304,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -6358,7 +6368,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（挪威让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.6528,
           "confidence": 4,
           "riskLevel": "保守",
@@ -6367,7 +6377,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5192,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -6391,12 +6401,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "挪威/挪威",
+          "pickLabel": "客/客",
           "probability": 0.4151,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6410,7 +6420,7 @@
         "eloAway": 1950,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6422,7 +6432,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -6486,7 +6496,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（法国让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -6495,7 +6505,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -6519,12 +6529,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "法国/法国",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6538,7 +6548,7 @@
         "eloAway": 1675,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6550,7 +6560,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -6614,7 +6624,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（挪威让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.4669,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6623,7 +6633,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -6647,12 +6657,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "挪威/挪威",
+          "pickLabel": "主/主",
           "probability": 0.279,
           "confidence": 1,
           "riskLevel": "进取",
@@ -6666,7 +6676,7 @@
         "eloAway": 1900,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6678,7 +6688,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -6742,7 +6752,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（法国让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5451,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -6751,7 +6761,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.515,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -6775,12 +6785,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "法国/法国",
+          "pickLabel": "客/客",
           "probability": 0.3338,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6794,7 +6804,7 @@
         "eloAway": 2110,
         "h2hAvailable": true,
         "h2hMatches": 20,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6806,7 +6816,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -6870,7 +6880,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（塞内加尔让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6575,
           "confidence": 4,
           "riskLevel": "保守",
@@ -6879,7 +6889,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5192,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -6903,12 +6913,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "塞内加尔/塞内加尔",
+          "pickLabel": "主/主",
           "probability": 0.4189,
           "confidence": 2,
           "riskLevel": "进取",
@@ -6922,7 +6932,7 @@
         "eloAway": 1675,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -6934,7 +6944,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -6998,7 +7008,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-1",
-          "pickLabel": "主队-1（阿根廷让1.0球）",
+          "pickLabel": "主队-1",
           "probability": 0.7569,
           "confidence": 5,
           "riskLevel": "保守",
@@ -7007,7 +7017,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5942,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -7031,12 +7041,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "阿根廷/阿根廷",
+          "pickLabel": "主/主",
           "probability": 0.5117,
           "confidence": 4,
           "riskLevel": "进取",
@@ -7050,7 +7060,7 @@
         "eloAway": 1805,
         "h2hAvailable": true,
         "h2hMatches": 4,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -7062,7 +7072,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -7126,7 +7136,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（奥地利让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.6878,
           "confidence": 5,
           "riskLevel": "保守",
@@ -7135,7 +7145,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5194,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7159,12 +7169,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "奥地利/奥地利",
+          "pickLabel": "主/主",
           "probability": 0.4434,
           "confidence": 2,
           "riskLevel": "进取",
@@ -7190,7 +7200,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -7254,7 +7264,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（阿根廷让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6321,
           "confidence": 5,
           "riskLevel": "保守",
@@ -7263,7 +7273,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5799,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -7287,12 +7297,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "阿根廷/阿根廷",
+          "pickLabel": "主/主",
           "probability": 0.4038,
           "confidence": 3,
           "riskLevel": "进取",
@@ -7306,7 +7316,7 @@
         "eloAway": 1870,
         "h2hAvailable": true,
         "h2hMatches": 2,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -7318,7 +7328,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -7382,16 +7392,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.4332,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7415,12 +7425,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "阿尔及利亚/阿尔及利亚",
+          "pickLabel": "客/客",
           "probability": 0.2563,
           "confidence": 1,
           "riskLevel": "进取",
@@ -7446,7 +7456,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -7510,16 +7520,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.3812,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5111,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -7543,16 +7553,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "阿尔及利亚/阿尔及利亚",
+          "pickLabel": "主/主",
           "probability": 0.2235,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -7574,7 +7584,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -7638,7 +7648,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5/1",
-          "pickLabel": "客队-0.5/1（阿根廷让0.75球）",
+          "pickLabel": "客队-0.5/1",
           "probability": 0.6981,
           "confidence": 5,
           "riskLevel": "保守",
@@ -7647,7 +7657,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5195,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7671,12 +7681,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "阿根廷/阿根廷",
+          "pickLabel": "客/客",
           "probability": 0.4524,
           "confidence": 3,
           "riskLevel": "进取",
@@ -7702,7 +7712,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -7766,7 +7776,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（葡萄牙让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -7775,7 +7785,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7799,12 +7809,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "葡萄牙/葡萄牙",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 2,
           "riskLevel": "进取",
@@ -7830,7 +7840,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -7894,7 +7904,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（哥伦比亚让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.5776,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7903,7 +7913,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5189,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -7927,12 +7937,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "哥伦比亚/哥伦比亚",
+          "pickLabel": "客/客",
           "probability": 0.3576,
           "confidence": 1,
           "riskLevel": "进取",
@@ -7958,7 +7968,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -8022,7 +8032,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（葡萄牙让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.6858,
           "confidence": 4,
           "riskLevel": "保守",
@@ -8031,7 +8041,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5194,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8055,12 +8065,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "葡萄牙/葡萄牙",
+          "pickLabel": "主/主",
           "probability": 0.4417,
           "confidence": 2,
           "riskLevel": "进取",
@@ -8074,7 +8084,7 @@
         "eloAway": 1705,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "被克制"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8086,7 +8096,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -8150,7 +8160,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（哥伦比亚让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -8159,7 +8169,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8183,12 +8193,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "哥伦比亚/哥伦比亚",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 2,
           "riskLevel": "进取",
@@ -8214,7 +8224,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -8278,16 +8288,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0/0.5",
-          "pickLabel": "客队-0/0.5（葡萄牙让0.25球）",
+          "pickLabel": "客队-0/0.5",
           "probability": 0.4474,
           "confidence": 2,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8311,12 +8321,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "葡萄牙/葡萄牙",
+          "pickLabel": "客/客",
           "probability": 0.2658,
           "confidence": 1,
           "riskLevel": "进取",
@@ -8330,7 +8340,7 @@
         "eloAway": 2050,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8342,7 +8352,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -8406,16 +8416,16 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "平手",
-          "pickLabel": "平手盘",
+          "pickLabel": "平手",
           "probability": 0.3858,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8439,16 +8449,16 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "民主刚果/民主刚果",
+          "pickLabel": "主/主",
           "probability": 0.2253,
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "谨慎考虑"
+          "recommendation": "可考虑"
         }
       },
       "inputs": {
@@ -8458,7 +8468,7 @@
         "eloAway": 1705,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8470,7 +8480,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -8534,7 +8544,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（英格兰让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.5927,
           "confidence": 5,
           "riskLevel": "稳健",
@@ -8543,7 +8553,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.5238,
           "confidence": 4,
           "riskLevel": "稳健",
@@ -8567,12 +8577,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "英格兰/英格兰",
+          "pickLabel": "主/主",
           "probability": 0.3707,
           "confidence": 3,
           "riskLevel": "进取",
@@ -8586,7 +8596,7 @@
         "eloAway": 1955,
         "h2hAvailable": true,
         "h2hMatches": 11,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8598,7 +8608,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -8662,7 +8672,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5（加纳让0.25球）",
+          "pickLabel": "主队-0/0.5",
           "probability": 0.475,
           "confidence": 3,
           "riskLevel": "进取",
@@ -8671,7 +8681,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5186,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8695,12 +8705,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "加纳/加纳",
+          "pickLabel": "主/主",
           "probability": 0.2845,
           "confidence": 1,
           "riskLevel": "进取",
@@ -8714,7 +8724,7 @@
         "eloAway": 1680,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8726,7 +8736,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 2,
@@ -8790,7 +8800,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1（英格兰让0.75球）",
+          "pickLabel": "主队-0.5/1",
           "probability": 0.7391,
           "confidence": 5,
           "riskLevel": "保守",
@@ -8799,7 +8809,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5198,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8823,12 +8833,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "英格兰/英格兰",
+          "pickLabel": "主/主",
           "probability": 0.4876,
           "confidence": 3,
           "riskLevel": "进取",
@@ -8842,7 +8852,7 @@
         "eloAway": 1750,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8854,7 +8864,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -8918,7 +8928,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-0.5",
-          "pickLabel": "客队-0.5（克罗地亚让0.5球）",
+          "pickLabel": "客队-0.5",
           "probability": 0.6405,
           "confidence": 4,
           "riskLevel": "保守",
@@ -8927,7 +8937,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5191,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -8951,12 +8961,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "克罗地亚/克罗地亚",
+          "pickLabel": "客/客",
           "probability": 0.4054,
           "confidence": 2,
           "riskLevel": "进取",
@@ -8970,7 +8980,7 @@
         "eloAway": 1955,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -8982,7 +8992,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 0,
@@ -9046,7 +9056,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "客队-1/1.5",
-          "pickLabel": "客队-1/1.5（英格兰让1.25球）",
+          "pickLabel": "客队-1/1.5",
           "probability": 0.816,
           "confidence": 5,
           "riskLevel": "保守",
@@ -9055,7 +9065,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
-          "pickLabel": "大球2.5（大于2.5球）",
+          "pickLabel": "大球2.5",
           "probability": 0.7348,
           "confidence": 5,
           "riskLevel": "保守",
@@ -9079,12 +9089,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "客/客",
-          "pickLabel": "英格兰/英格兰",
+          "pickLabel": "客/客",
           "probability": 0.5865,
           "confidence": 4,
           "riskLevel": "进取",
@@ -9098,7 +9108,7 @@
         "eloAway": 2078,
         "h2hAvailable": true,
         "h2hMatches": 1,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -9110,7 +9120,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "predicted",
       "predictedScore": {
         "home": 1,
@@ -9174,7 +9184,7 @@
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
-          "pickLabel": "主队-0.5（克罗地亚让0.5球）",
+          "pickLabel": "主队-0.5",
           "probability": 0.6435,
           "confidence": 4,
           "riskLevel": "保守",
@@ -9183,7 +9193,7 @@
         "overUnder": {
           "market": "总进球数",
           "pick": "小球2.5",
-          "pickLabel": "小球2.5（小于2.5球）",
+          "pickLabel": "小球2.5",
           "probability": 0.5191,
           "confidence": 3,
           "riskLevel": "稳健",
@@ -9207,12 +9217,12 @@
           ],
           "confidence": 1,
           "riskLevel": "进取",
-          "recommendation": "高赔率娱乐注，小注怡情"
+          "recommendation": "高赔率娱乐注"
         },
         "halfFull": {
           "market": "半全场",
           "pick": "主/主",
-          "pickLabel": "克罗地亚/克罗地亚",
+          "pickLabel": "主/主",
           "probability": 0.4077,
           "confidence": 2,
           "riskLevel": "进取",
@@ -9226,7 +9236,7 @@
         "eloAway": 1750,
         "h2hAvailable": false,
         "h2hMatches": 0,
-        "styleMatchup": "中性"
+        "styleMatchup": "克制"
       },
       "correct": null,
       "accuracy": null
@@ -9238,7 +9248,7 @@
       "date": "2026-06-28",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9258,7 +9268,7 @@
       "date": "2026-06-28",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9278,7 +9288,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9298,7 +9308,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9318,7 +9328,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9338,7 +9348,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9358,7 +9368,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9378,7 +9388,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9398,7 +9408,7 @@
       "date": "2026-07-01",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9418,7 +9428,7 @@
       "date": "2026-07-01",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9438,7 +9448,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9458,7 +9468,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9478,7 +9488,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9498,7 +9508,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9518,7 +9528,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9538,7 +9548,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9558,7 +9568,7 @@
       "date": "2026-07-04",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9578,7 +9588,7 @@
       "date": "2026-07-04",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9598,7 +9608,7 @@
       "date": "2026-07-05",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9618,7 +9628,7 @@
       "date": "2026-07-05",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9638,7 +9648,7 @@
       "date": "2026-07-06",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9658,7 +9668,7 @@
       "date": "2026-07-06",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9678,7 +9688,7 @@
       "date": "2026-07-07",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9698,7 +9708,7 @@
       "date": "2026-07-07",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9718,7 +9728,7 @@
       "date": "2026-07-09",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9738,7 +9748,7 @@
       "date": "2026-07-10",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9758,7 +9768,7 @@
       "date": "2026-07-11",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9778,7 +9788,7 @@
       "date": "2026-07-11",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9798,7 +9808,7 @@
       "date": "2026-07-14",
       "round": "semi",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9818,7 +9828,7 @@
       "date": "2026-07-15",
       "round": "semi",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9838,7 +9848,7 @@
       "date": "2026-07-18",
       "round": "bronze",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -9858,7 +9868,7 @@
       "date": "2026-07-19",
       "round": "final",
       "group": null,
-      "generatedAt": "2026-06-03",
+      "generatedAt": "2026-06-12",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
