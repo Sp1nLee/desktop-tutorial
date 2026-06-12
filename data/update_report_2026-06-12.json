@@ -8,7 +8,7 @@
     },
     "elo": {
       "elo_updated": true,
-      "matches_updated": 1
+      "note": "already_updated"
     },
     "odds": {
       "odds_updated": true,
