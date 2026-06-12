@@ -930,7 +930,7 @@ body::before {
       </select>
     </div>
     <div style="color:var(--text-muted);font-size:0.85em;margin-bottom:12px;">
-      📊 基于泊松模型预测 + 综合战力指数 | 5种体彩玩法 | ★1-5信心评级 | ⚠️ 仅供参考，不构成投注建议
+      📊 基于Dixon-Coles模型 + 综合战力指数 | 5种体彩玩法 | ★1-5信心评级 | ⚠️ 仅供参考，不构成投注建议
     </div>
     <div id="bettingList"></div>
   </div>
@@ -974,7 +974,7 @@ body::before {
 
 <div class="footer">
   2026美加墨世界杯数据驱动分析系统 | 数据来源: FIFA官方排名 | eloratings.net | Opta Analyst | Transfermarkt | DraftKings/FanDuel/台湾运彩/澳洲博彩<br>
-  ⚠️ 比分预测基于 Composite+Elo 泊松模型，隐含赔率为 1÷概率反推（非真实盘口），仅供参考不构成投注建议 | 理性购彩，量力而行
+  ⚠️ 比分预测基于 Dixon-Coles(1997) + Elo + 贝叶斯优化模型，隐含赔率为 1÷概率反推（非真实盘口），仅供参考不构成投注建议 | 理性购彩，量力而行
 </div>
 
 <!-- ============ 加载打包数据 (file:// 兼容) ============ -->
@@ -1782,7 +1782,11 @@ function renderModalPrediction(matchId) {
   container.innerHTML = `
     <div class="prediction-box">
       ${reviewFlagHTML}
-      <div style="text-align:center;color:var(--gold);font-weight:bold;margin-bottom:10px;">🔮 系统预测 (泊松模型)</div>
+      <div style="text-align:center;color:var(--gold);font-weight:bold;margin-bottom:10px;">
+        🔮 系统预测 (Dixon-Coles v3.0)
+        ${pred.modelVersion === '3.0-dixon-coles' ? `<span style="display:inline-block;background:#1a3a2a;color:#4ade80;border:1px solid #4ade80;border-radius:4px;padding:2px 8px;font-size:0.7em;margin-left:6px;vertical-align:middle;">DC1997</span>` : ''}
+        ${pred.dixonColesRho !== undefined ? `<span style="display:inline-block;background:#1a2a3a;color:#60a5fa;border:1px solid #60a5fa;border-radius:4px;padding:2px 8px;font-size:0.7em;margin-left:4px;vertical-align:middle;">ρ=${pred.dixonColesRho}</span>` : ''}
+      </div>
       <div class="prediction-score">
         <div class="team"><div class="flag">${home?.flag||''}</div><div>${home?.nameCN||pred.homeTeam}</div></div>
         <div class="score-num">${ps.home} : ${ps.away}</div>
@@ -1790,7 +1794,14 @@ function renderModalPrediction(matchId) {
       </div>
       <div style="text-align:center;color:var(--text-muted);font-size:0.85em;">
         预期进球 λ: ${pred.expectedGoals.home} : ${pred.expectedGoals.away} | 总进球预期: ${pred.totalGoalsExpected}
+        ${pred.modelVersion === '3.0-dixon-coles' ? `| <span style="color:#60a5fa;">DC-ρ: ${pred.dixonColesRho||0.001}</span>` : ''}
       </div>
+      ${pred.inputs && (pred.inputs.formHome !== undefined || pred.inputs.restDaysHome !== undefined) ? `
+      <div style="margin-top:8px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;font-size:0.78em;">
+        ${pred.inputs.formHome !== undefined ? `<span style="background:var(--bg-card-alt);padding:3px 8px;border-radius:4px;" title="近期状态指数衰减加权">📈 状态 ${home?.nameCN||'主'}:${pred.inputs.formHome.toFixed(2)} ${away?.nameCN||'客'}:${pred.inputs.formAway.toFixed(2)}</span>` : ''}
+        ${pred.inputs.restDaysHome !== undefined ? `<span style="background:var(--bg-card-alt);padding:3px 8px;border-radius:4px;" title="休息日因子">🛏️ 休息 ${home?.nameCN||'主'}:${pred.inputs.restDaysHome}天 ${away?.nameCN||'客'}:${pred.inputs.restDaysAway}天</span>` : ''}
+        ${pred.inputs.travelKmHome !== undefined ? `<span style="background:var(--bg-card-alt);padding:3px 8px;border-radius:4px;" title="旅行距离因子">✈️ 旅行 ${home?.nameCN||'主'}:${pred.inputs.travelKmHome}km ${away?.nameCN||'客'}:${pred.inputs.travelKmAway}km</span>` : ''}
+      </div>` : ''}
       ${prob ? `
       <div style="margin-top:12px;">
         <div class="prob-bar-wrap">
@@ -1869,7 +1880,7 @@ function renderModalPrediction(matchId) {
           </div>`;
         }).join('')}
       </div>
-      <div style="text-align:center;color:var(--text-dim);font-size:0.72em;margin-top:10px;opacity:0.6;">⚠️ 以上推荐基于 Composite+Elo 泊松模型概率，隐含赔率为 1÷概率反推，非真实博彩盘口<br>真实赔率参考: DraftKings / FanDuel / 台湾运彩 / 澳洲博彩</div>
+      <div style="text-align:center;color:var(--text-dim);font-size:0.72em;margin-top:10px;opacity:0.6;">⚠️ 以上推荐基于 Dixon-Coles(1997) + Elo 模型概率，隐含赔率为 1÷概率反推，非真实博彩盘口<br>真实赔率参考: DraftKings / FanDuel / 台湾运彩 / 澳洲博彩</div>
     </div>`;
   } else {
     bettingContainer.innerHTML = '';
