@@ -39,7 +39,9 @@
       "venue": "Estadio Akron, 瓜达拉哈拉",
       "home": "KOR",
       "away": "CZE",
-      "status": "upcoming"
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "id": "A3",

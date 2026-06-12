@@ -1,92 +1,17 @@
 {
   "_meta": {
     "reportType": "prediction_review",
-    "generatedAt": "2026-06-12T11:11:51.699145+08:00",
+    "generatedAt": "2026-06-12T12:17:42.152600+08:00",
     "autoUpdateApplied": true,
-    "stableCount": 103,
+    "stableCount": 104,
     "minorChangeCount": 0,
-    "significantChangeCount": 1
+    "significantChangeCount": 0
   },
-  "changes": [
-    {
-      "matchId": "A3",
-      "homeTeam": "CZE",
-      "awayTeam": "RSA",
-      "date": "2026-06-18",
-      "group": "A",
-      "severity": "significant",
-      "requiresReview": true,
-      "flags": [
-        "胜负翻转: draw→home",
-        "比分微调: (1:1)→(1:0)"
-      ],
-      "current": {
-        "predictedScore": {
-          "home": 1,
-          "away": 0
-        },
-        "probabilities": {
-          "homeWin": 0.5165,
-          "draw": 0.2494,
-          "awayWin": 0.2339,
-          "over25": 0.4813,
-          "under25": 0.5187
-        },
-        "expectedGoals": {
-          "home": 1.61,
-          "away": 0.99
-        },
-        "inputs": {
-          "compositeHome": 46,
-          "compositeAway": 38,
-          "eloHome": 1795,
-          "eloAway": 1711,
-          "h2hAvailable": false,
-          "h2hMatches": 0,
-          "styleMatchup": "克制"
-        }
-      },
-      "previous": {
-        "predictedScore": {
-          "home": 1,
-          "away": 1
-        },
-        "probabilities": {
-          "homeWin": 0.5075,
-          "draw": 0.251,
-          "awayWin": 0.2412,
-          "over25": 0.4813,
-          "under25": 0.5187
-        },
-        "expectedGoals": {
-          "home": 1.59,
-          "away": 1.01
-        },
-        "inputs": {
-          "compositeHome": 46,
-          "compositeAway": 38,
-          "eloHome": 1795,
-          "eloAway": 1720,
-          "h2hAvailable": false,
-          "h2hMatches": 0,
-          "styleMatchup": "中性"
-        }
-      },
-      "deltas": {
-        "winner": "draw→home",
-        "scoreHome": 0,
-        "scoreAway": -1,
-        "homeWinProb": 0.009,
-        "drawProb": 0.0016,
-        "awayWinProb": 0.0073,
-        "compositeHome": 0,
-        "compositeAway": 0
-      }
-    }
-  ],
+  "changes": [],
   "stable": [
     "A1",
     "A2",
+    "A3",
     "A4",
     "A5",
     "A6",

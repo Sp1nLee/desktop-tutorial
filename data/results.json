@@ -49,15 +49,38 @@
         }
       ],
       "attendance": 80000,
-      "note": "2026世界杯揭幕战，3张红牌创纪录"
+      "note": "2026世界杯揭幕战，3张红牌创纪录",
+      "home_half": 1,
+      "away_half": 0,
+      "cctv_id": null
+    },
+    {
+      "id": "A2",
+      "espn_id": null,
+      "fifa_id": "400021441",
+      "cctv_id": null,
+      "qq_id": null,
+      "date": "2026-06-12",
+      "home": "KOR",
+      "away": "CZE",
+      "home_score": 2,
+      "away_score": 1,
+      "goals": [],
+      "red_cards": [],
+      "venue": "",
+      "attendance": 0,
+      "source": "FIFA API",
+      "fetched_at": "2026-06-12",
+      "home_half": 0,
+      "away_half": 0
     }
   ],
   "stats": {
-    "totalMatches": 1,
-    "homeWins": 1,
+    "totalMatches": 2,
+    "homeWins": 2,
     "draws": 0,
     "awayWins": 0,
-    "totalGoals": 2,
-    "avgGoals": 2.0
+    "totalGoals": 5,
+    "avgGoals": 2.5
   }
 }
