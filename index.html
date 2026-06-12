@@ -225,6 +225,7 @@ body::before {
 #liveDot.online { background:var(--green);box-shadow:0 0 8px var(--green);animation:livePulse 2s infinite; }
 #liveDot.updating { background:var(--orange);box-shadow:0 0 8px var(--orange);animation:livePulse 1s infinite; }
 #liveDot.offline { background:var(--red); }
+#liveDot.ready { background:var(--text-muted); }
 @keyframes livePulse { 0%,100% { box-shadow:0 0 4px currentColor; } 50% { box-shadow:0 0 12px currentColor; } }
 
 /* ===== Toast 通知 ===== */
@@ -716,8 +717,8 @@ body::before {
 
 <!-- v3.0 实时状态指示灯 -->
 <div id="liveStatusBar">
-  <span id="liveDot" class="offline"></span>
-  <span id="liveStatusText">离线模式</span>
+  <span id="liveDot" class="ready"></span>
+  <span id="liveStatusText">数据已就绪</span>
 </div>
 <!-- Toast 通知容器 -->
 <div class="toast-container" id="toastContainer"></div>
@@ -2698,7 +2699,7 @@ function connectEventSource() {
     });
 
     eventSource.onerror = () => {
-      updateLiveIndicator('offline', '离线模式');
+      updateLiveIndicator('ready', '实时连接断开');
       eventSource.close();
       eventSource = null;
       // 10秒后重连
@@ -2706,9 +2707,9 @@ function connectEventSource() {
     };
 
   } catch(e) {
-    // SSE 不可用 (file:// 协议或无服务器)
-    console.log('📡 SSE 不可用，使用离线模式');
-    updateLiveIndicator('offline', '离线模式');
+    // SSE 不可用 (file:// 协议或无服务器) — 数据仍正常显示
+    console.log('📡 SSE 不可用，使用静态模式');
+    updateLiveIndicator('ready', '数据已就绪');
   }
 }
 
@@ -2764,7 +2765,7 @@ async function reloadData() {
     console.log('✅ 数据已无感刷新');
   } catch (err) {
     console.error('数据重载失败:', err);
-    updateLiveIndicator('offline', '离线模式');
+    updateLiveIndicator('ready', '数据刷新失败');
   } finally {
     reloadLock = false;
   }
