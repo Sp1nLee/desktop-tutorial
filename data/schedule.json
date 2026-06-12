@@ -25,7 +25,9 @@
       "venue": "Estadio Azteca, 墨西哥城",
       "home": "MEX",
       "away": "RSA",
-      "status": "upcoming"
+      "status": "completed",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "id": "A2",

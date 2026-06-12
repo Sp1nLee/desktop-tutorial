@@ -1,14 +1,41 @@
 {
   "_meta": {
-    "description": "实际赛果记录 - 赛后手动更新或通过update.py自动更新",
-    "version": "2.0"
+    "description": "实际赛果记录 — 赛后手动更新或通过update.py自动更新",
+    "version": "2.0",
+    "updated": "2026-06-12"
   },
-  "results": [],
+  "results": [
+    {
+      "id": "A1",
+      "date": "2026-06-11",
+      "time": "15:00",
+      "group": "A",
+      "round": "group",
+      "matchday": 1,
+      "home": "MEX",
+      "away": "RSA",
+      "home_score": 2,
+      "away_score": 0,
+      "venue": "Estadio Azteca, 墨西哥城",
+      "goals": [
+        {"minute": 9, "scorer": "Julián Quiñones", "team": "MEX", "assist": "Érik Lira"},
+        {"minute": 67, "scorer": "Raúl Jiménez", "team": "MEX", "assist": "Roberto Alvarado"}
+      ],
+      "red_cards": [
+        {"minute": 49, "player": "Sphephelo Sithole", "team": "RSA"},
+        {"minute": 84, "player": "Themba Zwane", "team": "RSA"},
+        {"minute": 92, "player": "César Montes", "team": "MEX"}
+      ],
+      "attendance": 80000,
+      "note": "2026世界杯揭幕战，3张红牌创纪录"
+    }
+  ],
   "stats": {
-    "totalMatches": 0,
-    "homeWins": 0,
+    "totalMatches": 1,
+    "homeWins": 1,
     "draws": 0,
     "awayWins": 0,
-    "avgGoals": 0
+    "totalGoals": 2,
+    "avgGoals": 2.0
   }
 }
