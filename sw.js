@@ -1,5 +1,5 @@
 // Service Worker — 2026世界杯看板 离线缓存
-const CACHE_NAME = 'worldcup2026-v3';
+const CACHE_NAME = 'worldcup2026-v4';
 const STATIC_ASSETS = [
   './data/bundle.js',
   './js/echarts.min.js',
