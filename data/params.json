@@ -1,11 +1,11 @@
 {
   "_meta": {
-    "updated": "2026-06-12",
+    "updated": "2026-06-13",
     "version": "3.0"
   },
   "params": {
     "BLEND": 0.775,
-    "BASE_GOALS": 2.35,
+    "BASE_GOALS": 2.95,
     "HOME_ADVANTAGE": 21,
     "ELO_K": 32,
     "RHO": 0.001,

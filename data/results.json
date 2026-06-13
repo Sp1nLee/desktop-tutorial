@@ -2,7 +2,7 @@
   "_meta": {
     "description": "实际赛果记录 — 赛后手动更新或通过update.py自动更新",
     "version": "2.0",
-    "updated": "2026-06-12"
+    "updated": "2026-06-13"
   },
   "results": [
     {
@@ -76,22 +76,58 @@
       "fetched_at": "2026-06-12",
       "home_half": 0,
       "away_half": 0
+    },
+    {
+      "id": "B1",
+      "matchId": "B1",
+      "group": "B",
+      "espn_id": null,
+      "fifa_id": "400021449",
+      "cctv_id": null,
+      "qq_id": null,
+      "date": "2026-06-12",
+      "home": "CAN",
+      "away": "BIH",
+      "home_score": 1,
+      "away_score": 1,
+      "home_half": null,
+      "away_half": null,
+      "goals": [],
+      "red_cards": [],
+      "venue": "",
+      "attendance": 0,
+      "source": "FIFA API",
+      "fetched_at": "2026-06-13"
+    },
+    {
+      "id": "D1",
+      "matchId": "D1",
+      "group": "D",
+      "espn_id": null,
+      "fifa_id": "400021458",
+      "cctv_id": null,
+      "qq_id": null,
+      "date": "2026-06-12",
+      "home": "USA",
+      "away": "PAR",
+      "home_score": 4,
+      "away_score": 1,
+      "home_half": 3,
+      "away_half": 0,
+      "goals": [],
+      "red_cards": [],
+      "venue": "SoFi Stadium, Los Angeles",
+      "attendance": 0,
+      "source": "FIFA API",
+      "fetched_at": "2026-06-13"
     }
   ],
   "stats": {
-    "totalMatches": 2,
-    "homeWins": 5,
-    "draws": 0,
+    "totalMatches": 4,
+    "homeWins": 3,
+    "draws": 1,
     "awayWins": 0,
     "totalGoals": 12,
-    "avgGoals": 2.4,
-    "predictionTracking": {
-      "totalPredictedMatches": 2,
-      "outcomeAccuracy": 0.0,
-      "exactScoreAccuracy": 0.0,
-      "goalDiffAccuracy": 0.0,
-      "over25Accuracy": 50.0,
-      "compositeAccuracy": 7.5
-    }
+    "avgGoals": 3.0
   }
 }

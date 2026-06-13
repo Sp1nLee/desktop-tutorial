@@ -3,10 +3,10 @@
     "description": "Dixon-Coles Poisson Model with Bayesian Optimization",
     "version": "3.0",
     "algorithm": "Dixon-Coles (1997) + 贝叶斯优化 + Platt校准 + 休息日/旅行/状态因子",
-    "generatedAt": "2026-06-12",
+    "generatedAt": "2026-06-13",
     "totalPredicted": 72,
     "pendingKnockout": 32,
-    "paramsOptimizedAt": "2026-06-12"
+    "paramsOptimizedAt": "2026-06-13"
   },
   "modelParams": {
     "homeAdvantage": 21,
@@ -27,7 +27,7 @@
       "date": "2026-06-11",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -35,47 +35,47 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.84,
-        "away": 0.93
+        "home": 1.89,
+        "away": 0.88
       },
       "totalGoalsExpected": 2.77,
       "probabilities": {
-        "homeWin": 0.587,
-        "draw": 0.2256,
-        "awayWin": 0.1874,
-        "over25": 0.5231,
-        "under25": 0.4769
+        "homeWin": 0.6117,
+        "draw": 0.2189,
+        "awayWin": 0.1694,
+        "over25": 0.523,
+        "under25": 0.477
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1154
-        },
-        {
-          "score": "1:1",
-          "prob": 0.1073
+          "prob": 0.1187
         },
         {
           "score": "2:0",
-          "prob": 0.106
+          "prob": 0.1122
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1041
         },
         {
           "score": "2:1",
-          "prob": 0.0987
+          "prob": 0.0986
         },
         {
           "score": "3:0",
-          "prob": 0.065
+          "prob": 0.0707
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
-        "compositeHome": 55,
-        "compositeAway": 35,
-        "eloHome": 1867,
-        "eloAway": 1703,
-        "lambdaHome": 1.839,
-        "lambdaAway": 0.931,
+        "compositeHome": 56,
+        "compositeAway": 34,
+        "eloHome": 1877,
+        "eloAway": 1693,
+        "lambdaHome": 1.891,
+        "lambdaAway": 0.879,
         "h2hAvailable": true,
         "h2hMatches": 4,
         "paramsUsed": {
@@ -98,40 +98,40 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.3664,
-        "平/主": 0.1846,
-        "平/平": 0.1417,
-        "客/客": 0.1046,
-        "平/客": 0.0741,
-        "客/平": 0.0455,
-        "主/平": 0.0455,
-        "客/主": 0.0259,
-        "主/客": 0.0117
+        "主/主": 0.3841,
+        "平/主": 0.1898,
+        "平/平": 0.1392,
+        "客/客": 0.0946,
+        "平/客": 0.0684,
+        "主/平": 0.0438,
+        "客/平": 0.0438,
+        "客/主": 0.0258,
+        "主/客": 0.0106
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "墨西哥胜",
-          "probability": 0.587,
-          "confidence": 4,
-          "riskLevel": "稳健",
+          "probability": 0.6117,
+          "confidence": 5,
+          "riskLevel": "保守",
           "recommendation": "重点推荐"
         },
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0.5",
           "pickLabel": "主队-0.5",
-          "probability": 0.587,
-          "confidence": 4,
-          "riskLevel": "稳健",
+          "probability": 0.6117,
+          "confidence": 5,
+          "riskLevel": "保守",
           "recommendation": "可考虑"
         },
         "overUnder": {
           "market": "总进球数",
           "pick": "大球2.5",
           "pickLabel": "大球2.5",
-          "probability": 0.5231,
+          "probability": 0.523,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -141,15 +141,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1154
-            },
-            {
-              "score": "1:1",
-              "prob": 0.1073
+              "prob": 0.1187
             },
             {
               "score": "2:0",
-              "prob": 0.106
+              "prob": 0.1122
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1041
             }
           ],
           "confidence": 1,
@@ -160,7 +160,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.3664,
+          "probability": 0.3841,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -174,7 +174,7 @@
       "date": "2026-06-11",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -182,47 +182,47 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.29,
-        "away": 0.96
+        "home": 1.35,
+        "away": 0.9
       },
       "totalGoalsExpected": 2.25,
       "probabilities": {
-        "homeWin": 0.4401,
-        "draw": 0.2825,
-        "awayWin": 0.2774,
+        "homeWin": 0.4716,
+        "draw": 0.2782,
+        "awayWin": 0.2502,
         "over25": 0.3893,
         "under25": 0.6107
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1364
+          "prob": 0.1428
         },
         {
           "score": "1:1",
-          "prob": 0.1305
+          "prob": 0.128
         },
         {
           "score": "0:0",
           "prob": 0.1058
         },
         {
-          "score": "0:1",
-          "prob": 0.1017
+          "score": "2:0",
+          "prob": 0.096
         },
         {
-          "score": "2:0",
-          "prob": 0.0876
+          "score": "0:1",
+          "prob": 0.0953
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 48,
-        "compositeAway": 46,
-        "eloHome": 1824,
-        "eloAway": 1781,
-        "lambdaHome": 1.286,
-        "lambdaAway": 0.959,
+        "compositeAway": 45,
+        "eloHome": 1836,
+        "eloAway": 1769,
+        "lambdaHome": 1.346,
+        "lambdaAway": 0.899,
         "h2hAvailable": true,
         "h2hMatches": 2,
         "paramsUsed": {
@@ -245,22 +245,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2575,
-        "平/平": 0.1909,
-        "平/主": 0.1614,
-        "客/客": 0.1536,
-        "平/客": 0.1102,
-        "主/平": 0.0475,
-        "客/平": 0.0473,
-        "客/主": 0.0184,
-        "主/客": 0.0132
+        "主/主": 0.2785,
+        "平/平": 0.1891,
+        "平/主": 0.1705,
+        "客/客": 0.1374,
+        "平/客": 0.101,
+        "主/平": 0.0463,
+        "客/平": 0.0462,
+        "客/主": 0.019,
+        "主/客": 0.012
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "韩国胜",
-          "probability": 0.4401,
+          "probability": 0.4716,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -269,7 +269,7 @@
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.4401,
+          "probability": 0.4716,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -288,11 +288,11 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1364
+              "prob": 0.1428
             },
             {
               "score": "1:1",
-              "prob": 0.1305
+              "prob": 0.128
             },
             {
               "score": "0:0",
@@ -307,7 +307,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2575,
+          "probability": 0.2785,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -321,7 +321,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -334,16 +334,16 @@
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.4994,
-        "draw": 0.2666,
-        "awayWin": 0.234,
+        "homeWin": 0.4987,
+        "draw": 0.2667,
+        "awayWin": 0.2345,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1384
+          "prob": 0.1383
         },
         {
           "score": "1:1",
@@ -351,7 +351,7 @@
         },
         {
           "score": "2:0",
-          "prob": 0.1003
+          "prob": 0.1001
         },
         {
           "score": "0:0",
@@ -365,11 +365,11 @@
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 45,
-        "compositeAway": 38,
-        "eloHome": 1781,
-        "eloAway": 1703,
-        "lambdaHome": 1.45,
-        "lambdaAway": 0.9,
+        "compositeAway": 37,
+        "eloHome": 1769,
+        "eloAway": 1693,
+        "lambdaHome": 1.449,
+        "lambdaAway": 0.901,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -407,7 +407,7 @@
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "捷克胜",
-          "probability": 0.4994,
+          "probability": 0.4987,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -416,7 +416,7 @@
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.4994,
+          "probability": 0.4987,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -435,7 +435,7 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1384
+              "prob": 0.1383
             },
             {
               "score": "1:1",
@@ -443,7 +443,7 @@
             },
             {
               "score": "2:0",
-              "prob": 0.1003
+              "prob": 0.1001
             }
           ],
           "confidence": 1,
@@ -468,7 +468,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -477,32 +477,32 @@
       },
       "expectedGoals": {
         "home": 1.64,
-        "away": 0.94
+        "away": 0.95
       },
       "totalGoalsExpected": 2.58,
       "probabilities": {
-        "homeWin": 0.5391,
-        "draw": 0.2456,
-        "awayWin": 0.2153,
+        "homeWin": 0.536,
+        "draw": 0.2463,
+        "awayWin": 0.2178,
         "over25": 0.477,
         "under25": 0.523
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1244
+          "prob": 0.1239
         },
         {
           "score": "1:1",
-          "prob": 0.1166
+          "prob": 0.1169
         },
         {
           "score": "2:0",
-          "prob": 0.1021
+          "prob": 0.1013
         },
         {
           "score": "2:1",
-          "prob": 0.0959
+          "prob": 0.0958
         },
         {
           "score": "0:0",
@@ -511,12 +511,12 @@
       ],
       "dixonColesRho": 0.001,
       "inputs": {
-        "compositeHome": 57,
-        "compositeAway": 43,
-        "eloHome": 1867,
-        "eloAway": 1824,
-        "lambdaHome": 1.643,
-        "lambdaAway": 0.939,
+        "compositeHome": 58,
+        "compositeAway": 44,
+        "eloHome": 1877,
+        "eloAway": 1836,
+        "lambdaHome": 1.637,
+        "lambdaAway": 0.946,
         "h2hAvailable": true,
         "h2hMatches": 8,
         "paramsUsed": {
@@ -539,22 +539,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.3281,
-        "平/主": 0.1785,
-        "平/平": 0.158,
-        "客/客": 0.1202,
-        "平/客": 0.0855,
-        "主/平": 0.0469,
-        "客/平": 0.0469,
-        "客/主": 0.0236,
-        "主/客": 0.0124
+        "主/主": 0.3265,
+        "平/主": 0.1776,
+        "平/平": 0.1575,
+        "客/客": 0.1218,
+        "平/客": 0.0862,
+        "主/平": 0.0471,
+        "客/平": 0.0471,
+        "客/主": 0.0237,
+        "主/客": 0.0126
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "墨西哥胜",
-          "probability": 0.5391,
+          "probability": 0.536,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -563,7 +563,7 @@
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.5391,
+          "probability": 0.536,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -582,15 +582,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1244
+              "prob": 0.1239
             },
             {
               "score": "1:1",
-              "prob": 0.1166
+              "prob": 0.1169
             },
             {
               "score": "2:0",
-              "prob": 0.1021
+              "prob": 0.1013
             }
           ],
           "confidence": 1,
@@ -601,7 +601,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.3281,
+          "probability": 0.3265,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -615,7 +615,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -623,29 +623,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.11,
-        "away": 1.24
+        "home": 1.05,
+        "away": 1.3
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.3263,
-        "draw": 0.279,
-        "awayWin": 0.3947,
+        "homeWin": 0.2993,
+        "draw": 0.277,
+        "awayWin": 0.4237,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1311
+          "prob": 0.13
         },
         {
           "score": "0:1",
-          "prob": 0.1189
+          "prob": 0.1244
         },
         {
           "score": "1:0",
-          "prob": 0.1055
+          "prob": 0.1
         },
         {
           "score": "0:0",
@@ -653,17 +653,17 @@
         },
         {
           "score": "1:2",
-          "prob": 0.0817
+          "prob": 0.0847
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 45,
-        "compositeAway": 52,
-        "eloHome": 1781,
-        "eloAway": 1867,
-        "lambdaHome": 1.105,
-        "lambdaAway": 1.245,
+        "compositeAway": 53,
+        "eloHome": 1769,
+        "eloAway": 1877,
+        "lambdaHome": 1.048,
+        "lambdaAway": 1.302,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -686,22 +686,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "客/客": 0.2267,
-        "主/主": 0.1865,
-        "平/平": 0.1834,
-        "平/客": 0.1445,
-        "平/主": 0.125,
-        "客/平": 0.0497,
-        "主/平": 0.0497,
-        "主/客": 0.0183,
-        "客/主": 0.0161
+        "客/客": 0.2464,
+        "平/平": 0.1826,
+        "主/主": 0.1691,
+        "平/客": 0.1534,
+        "平/主": 0.1161,
+        "客/平": 0.0492,
+        "主/平": 0.0492,
+        "主/客": 0.0191,
+        "客/主": 0.0149
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "客胜",
           "pickLabel": "墨西哥胜",
-          "probability": 0.3947,
+          "probability": 0.4237,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -710,7 +710,7 @@
           "market": "让球胜平负",
           "pick": "平手",
           "pickLabel": "平手",
-          "probability": 0.3947,
+          "probability": 0.4237,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -729,15 +729,15 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1311
+              "prob": 0.13
             },
             {
               "score": "0:1",
-              "prob": 0.1189
+              "prob": 0.1244
             },
             {
               "score": "1:0",
-              "prob": 0.1055
+              "prob": 0.1
             }
           ],
           "confidence": 1,
@@ -748,7 +748,7 @@
           "market": "半全场",
           "pick": "客/客",
           "pickLabel": "客/客",
-          "probability": 0.2267,
+          "probability": 0.2464,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -762,7 +762,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "A",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -770,29 +770,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 0.73,
-        "away": 1.51
+        "home": 0.68,
+        "away": 1.57
       },
       "totalGoalsExpected": 2.25,
       "probabilities": {
-        "homeWin": 0.1804,
-        "draw": 0.2597,
-        "awayWin": 0.5599,
+        "homeWin": 0.1593,
+        "draw": 0.2516,
+        "awayWin": 0.5891,
         "over25": 0.3892,
         "under25": 0.6108
       },
       "topScores": [
         {
           "score": "0:1",
-          "prob": 0.1605
+          "prob": 0.1664
         },
         {
           "score": "0:2",
-          "prob": 0.1214
+          "prob": 0.1305
         },
         {
           "score": "1:1",
-          "prob": 0.1172
+          "prob": 0.1122
         },
         {
           "score": "0:0",
@@ -800,17 +800,17 @@
         },
         {
           "score": "1:2",
-          "prob": 0.0888
+          "prob": 0.0882
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
-        "compositeHome": 37,
-        "compositeAway": 49,
-        "eloHome": 1703,
-        "eloAway": 1824,
-        "lambdaHome": 0.731,
-        "lambdaAway": 1.514,
+        "compositeHome": 36,
+        "compositeAway": 50,
+        "eloHome": 1693,
+        "eloAway": 1836,
+        "lambdaHome": 0.676,
+        "lambdaAway": 1.569,
         "h2hAvailable": true,
         "h2hMatches": 2,
         "paramsUsed": {
@@ -833,22 +833,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "客/客": 0.3389,
-        "平/客": 0.1948,
-        "平/平": 0.1823,
-        "主/主": 0.0969,
-        "平/主": 0.0766,
-        "客/平": 0.0412,
-        "主/平": 0.0411,
-        "主/客": 0.0195,
-        "客/主": 0.0085
+        "客/客": 0.3595,
+        "平/客": 0.2021,
+        "平/平": 0.1783,
+        "主/主": 0.0856,
+        "平/主": 0.0692,
+        "主/平": 0.0391,
+        "客/平": 0.0391,
+        "主/客": 0.0196,
+        "客/主": 0.0075
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "客胜",
           "pickLabel": "韩国胜",
-          "probability": 0.5599,
+          "probability": 0.5891,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "重点推荐"
@@ -857,7 +857,7 @@
           "market": "让球胜平负",
           "pick": "客队-0.5",
           "pickLabel": "客队-0.5",
-          "probability": 0.5599,
+          "probability": 0.5891,
           "confidence": 4,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
@@ -876,15 +876,15 @@
           "picks": [
             {
               "score": "0:1",
-              "prob": 0.1605
+              "prob": 0.1664
             },
             {
               "score": "0:2",
-              "prob": 0.1214
+              "prob": 0.1305
             },
             {
               "score": "1:1",
-              "prob": 0.1172
+              "prob": 0.1122
             }
           ],
           "confidence": 1,
@@ -895,7 +895,7 @@
           "market": "半全场",
           "pick": "客/客",
           "pickLabel": "客/客",
-          "probability": 0.3389,
+          "probability": 0.3595,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -909,7 +909,7 @@
       "date": "2026-06-12",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -917,29 +917,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.29,
-        "away": 1.06
+        "home": 1.27,
+        "away": 1.08
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.416,
-        "draw": 0.2776,
-        "awayWin": 0.3064,
+        "homeWin": 0.4059,
+        "draw": 0.2783,
+        "awayWin": 0.3157,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1303
+          "prob": 0.1307
         },
         {
           "score": "1:0",
-          "prob": 0.1229
+          "prob": 0.121
         },
         {
           "score": "0:1",
-          "prob": 0.1015
+          "prob": 0.1034
         },
         {
           "score": "0:0",
@@ -947,17 +947,17 @@
         },
         {
           "score": "2:1",
-          "prob": 0.084
+          "prob": 0.0829
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 47,
         "compositeAway": 40,
-        "eloHome": 1800,
-        "eloAway": 1740,
-        "lambdaHome": 1.287,
-        "lambdaAway": 1.063,
+        "eloHome": 1796,
+        "eloAway": 1744,
+        "lambdaHome": 1.267,
+        "lambdaAway": 1.083,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -980,22 +980,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2431,
-        "平/平": 0.1828,
-        "客/客": 0.172,
-        "平/主": 0.1519,
-        "平/客": 0.1176,
-        "主/平": 0.0493,
-        "客/平": 0.0493,
-        "客/主": 0.019,
-        "主/客": 0.0151
+        "主/主": 0.2365,
+        "平/平": 0.1831,
+        "客/客": 0.1777,
+        "平/主": 0.149,
+        "平/客": 0.1206,
+        "客/平": 0.0495,
+        "主/平": 0.0495,
+        "客/主": 0.0187,
+        "主/客": 0.0155
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "加拿大胜",
-          "probability": 0.416,
+          "probability": 0.4059,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1004,7 +1004,7 @@
           "market": "让球胜平负",
           "pick": "平手",
           "pickLabel": "平手",
-          "probability": 0.416,
+          "probability": 0.4059,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1023,15 +1023,15 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1303
+              "prob": 0.1307
             },
             {
               "score": "1:0",
-              "prob": 0.1229
+              "prob": 0.121
             },
             {
               "score": "0:1",
-              "prob": 0.1015
+              "prob": 0.1034
             }
           ],
           "confidence": 1,
@@ -1042,7 +1042,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2431,
+          "probability": 0.2365,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1056,7 +1056,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1203,7 +1203,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1211,37 +1211,37 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.87,
-        "away": 0.67
+        "home": 1.86,
+        "away": 0.68
       },
       "totalGoalsExpected": 2.54,
       "probabilities": {
-        "homeWin": 0.6596,
-        "draw": 0.2133,
-        "awayWin": 0.1271,
+        "homeWin": 0.6556,
+        "draw": 0.2147,
+        "awayWin": 0.1298,
         "over25": 0.4673,
         "under25": 0.5327
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1471
+          "prob": 0.1464
         },
         {
           "score": "2:0",
-          "prob": 0.1375
+          "prob": 0.1363
         },
         {
           "score": "1:1",
-          "prob": 0.0989
+          "prob": 0.0997
         },
         {
           "score": "2:1",
-          "prob": 0.0926
+          "prob": 0.0929
         },
         {
           "score": "3:0",
-          "prob": 0.0858
+          "prob": 0.0846
         }
       ],
       "dixonColesRho": 0.001,
@@ -1249,9 +1249,9 @@
         "compositeHome": 65,
         "compositeAway": 30,
         "eloHome": 1910,
-        "eloAway": 1740,
-        "lambdaHome": 1.871,
-        "lambdaAway": 0.674,
+        "eloAway": 1744,
+        "lambdaHome": 1.863,
+        "lambdaAway": 0.682,
         "h2hAvailable": true,
         "h2hMatches": 2,
         "paramsUsed": {
@@ -1274,31 +1274,31 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.4196,
-        "平/主": 0.2084,
-        "平/平": 0.1467,
-        "客/客": 0.068,
-        "平/客": 0.0546,
-        "主/平": 0.0369,
-        "客/平": 0.0367,
-        "客/主": 0.0223,
-        "主/客": 0.0069
+        "主/主": 0.4159,
+        "平/主": 0.2074,
+        "平/平": 0.1473,
+        "客/客": 0.0698,
+        "平/客": 0.0558,
+        "主/平": 0.0373,
+        "客/平": 0.0371,
+        "客/主": 0.0224,
+        "主/客": 0.007
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "瑞士胜",
-          "probability": 0.6596,
+          "probability": 0.6556,
           "confidence": 5,
           "riskLevel": "保守",
           "recommendation": "重点推荐"
         },
         "handicap": {
           "market": "让球胜平负",
-          "pick": "主队-0.5/1",
-          "pickLabel": "主队-0.5/1",
-          "probability": 0.6596,
+          "pick": "主队-0.5",
+          "pickLabel": "主队-0.5",
+          "probability": 0.6556,
           "confidence": 5,
           "riskLevel": "保守",
           "recommendation": "可考虑"
@@ -1317,15 +1317,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1471
+              "prob": 0.1464
             },
             {
               "score": "2:0",
-              "prob": 0.1375
+              "prob": 0.1363
             },
             {
               "score": "1:1",
-              "prob": 0.0989
+              "prob": 0.0997
             }
           ],
           "confidence": 1,
@@ -1336,7 +1336,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.4196,
+          "probability": 0.4159,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1350,7 +1350,7 @@
       "date": "2026-06-18",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1358,25 +1358,25 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.67,
-        "away": 0.58
+        "home": 1.66,
+        "away": 0.59
       },
       "totalGoalsExpected": 2.25,
       "probabilities": {
-        "homeWin": 0.6395,
-        "draw": 0.2353,
-        "awayWin": 0.1252,
+        "homeWin": 0.6353,
+        "draw": 0.2368,
+        "awayWin": 0.128,
         "over25": 0.3891,
         "under25": 0.6109
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1767
+          "prob": 0.1758
         },
         {
           "score": "2:0",
-          "prob": 0.1472
+          "prob": 0.1457
         },
         {
           "score": "0:0",
@@ -1384,21 +1384,21 @@
         },
         {
           "score": "1:1",
-          "prob": 0.102
+          "prob": 0.103
         },
         {
           "score": "2:1",
-          "prob": 0.0851
+          "prob": 0.0855
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 54,
         "compositeAway": 29,
-        "eloHome": 1800,
+        "eloHome": 1796,
         "eloAway": 1670,
-        "lambdaHome": 1.667,
-        "lambdaAway": 0.578,
+        "lambdaHome": 1.658,
+        "lambdaAway": 0.587,
         "h2hAvailable": true,
         "h2hMatches": 1,
         "paramsUsed": {
@@ -1421,22 +1421,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.3987,
-        "平/主": 0.2151,
-        "平/平": 0.1713,
-        "客/客": 0.0654,
-        "平/客": 0.0559,
-        "主/平": 0.0347,
-        "客/平": 0.0345,
-        "客/主": 0.0188,
-        "主/客": 0.0056
+        "主/主": 0.3948,
+        "平/主": 0.2139,
+        "平/平": 0.172,
+        "客/客": 0.0672,
+        "平/客": 0.0572,
+        "主/平": 0.0351,
+        "客/平": 0.035,
+        "客/主": 0.0189,
+        "主/客": 0.0058
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "加拿大胜",
-          "probability": 0.6395,
+          "probability": 0.6353,
           "confidence": 5,
           "riskLevel": "保守",
           "recommendation": "重点推荐"
@@ -1445,7 +1445,7 @@
           "market": "让球胜平负",
           "pick": "主队-0.5",
           "pickLabel": "主队-0.5",
-          "probability": 0.6395,
+          "probability": 0.6353,
           "confidence": 5,
           "riskLevel": "保守",
           "recommendation": "可考虑"
@@ -1464,11 +1464,11 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1767
+              "prob": 0.1758
             },
             {
               "score": "2:0",
-              "prob": 0.1472
+              "prob": 0.1457
             },
             {
               "score": "0:0",
@@ -1483,7 +1483,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.3987,
+          "probability": 0.3948,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1497,7 +1497,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1505,37 +1505,37 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.41,
-        "away": 0.94
+        "home": 1.42,
+        "away": 0.93
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.4768,
-        "draw": 0.2705,
-        "awayWin": 0.2527,
+        "homeWin": 0.4815,
+        "draw": 0.2697,
+        "awayWin": 0.2488,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1342
+          "prob": 0.1351
         },
         {
           "score": "1:1",
-          "prob": 0.1265
+          "prob": 0.1261
+        },
+        {
+          "score": "2:0",
+          "prob": 0.0955
         },
         {
           "score": "0:0",
           "prob": 0.0953
         },
         {
-          "score": "2:0",
-          "prob": 0.0943
-        },
-        {
-          "score": "0:1",
-          "prob": 0.0901
+          "score": "2:1",
+          "prob": 0.0893
         }
       ],
       "dixonColesRho": 0.001,
@@ -1543,9 +1543,9 @@
         "compositeHome": 55,
         "compositeAway": 47,
         "eloHome": 1910,
-        "eloAway": 1800,
-        "lambdaHome": 1.406,
-        "lambdaAway": 0.944,
+        "eloAway": 1796,
+        "lambdaHome": 1.415,
+        "lambdaAway": 0.935,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -1568,22 +1568,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2843,
-        "平/平": 0.1799,
-        "平/主": 0.1696,
-        "客/客": 0.1388,
-        "平/客": 0.1,
-        "主/平": 0.0473,
-        "客/平": 0.0471,
-        "客/主": 0.0202,
-        "主/客": 0.0127
+        "主/主": 0.2878,
+        "平/平": 0.1796,
+        "平/主": 0.171,
+        "客/客": 0.1363,
+        "平/客": 0.0986,
+        "主/平": 0.0471,
+        "客/平": 0.0469,
+        "客/主": 0.0203,
+        "主/客": 0.0125
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "瑞士胜",
-          "probability": 0.4768,
+          "probability": 0.4815,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1592,7 +1592,7 @@
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.4768,
+          "probability": 0.4815,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1611,15 +1611,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1342
+              "prob": 0.1351
             },
             {
               "score": "1:1",
-              "prob": 0.1265
+              "prob": 0.1261
             },
             {
-              "score": "0:0",
-              "prob": 0.0953
+              "score": "2:0",
+              "prob": 0.0955
             }
           ],
           "confidence": 1,
@@ -1630,7 +1630,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2843,
+          "probability": 0.2878,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1644,7 +1644,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "B",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1652,29 +1652,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.3,
-        "away": 1.05
+        "home": 1.31,
+        "away": 1.04
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.4248,
-        "draw": 0.2769,
-        "awayWin": 0.2983,
+        "homeWin": 0.4298,
+        "draw": 0.2764,
+        "awayWin": 0.2938,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1299
+          "prob": 0.1297
         },
         {
           "score": "1:0",
-          "prob": 0.1246
+          "prob": 0.1255
         },
         {
           "score": "0:1",
-          "prob": 0.0998
+          "prob": 0.0989
         },
         {
           "score": "0:0",
@@ -1682,17 +1682,17 @@
         },
         {
           "score": "2:1",
-          "prob": 0.0848
+          "prob": 0.0853
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 40,
         "compositeAway": 36,
-        "eloHome": 1740,
+        "eloHome": 1744,
         "eloAway": 1670,
-        "lambdaHome": 1.305,
-        "lambdaAway": 1.045,
+        "lambdaHome": 1.314,
+        "lambdaAway": 1.036,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -1715,22 +1715,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2464,
-        "平/平": 0.1826,
-        "客/客": 0.1691,
-        "平/主": 0.1534,
-        "平/客": 0.1161,
-        "主/平": 0.0492,
-        "客/平": 0.0492,
-        "客/主": 0.0191,
-        "主/客": 0.0149
+        "主/主": 0.2497,
+        "平/平": 0.1824,
+        "客/客": 0.1663,
+        "平/主": 0.1549,
+        "平/客": 0.1146,
+        "主/平": 0.049,
+        "客/平": 0.049,
+        "客/主": 0.0192,
+        "主/客": 0.0147
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "波黑胜",
-          "probability": 0.4248,
+          "probability": 0.4298,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1739,7 +1739,7 @@
           "market": "让球胜平负",
           "pick": "平手",
           "pickLabel": "平手",
-          "probability": 0.4248,
+          "probability": 0.4298,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1758,15 +1758,15 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1299
+              "prob": 0.1297
             },
             {
               "score": "1:0",
-              "prob": 0.1246
+              "prob": 0.1255
             },
             {
               "score": "0:1",
-              "prob": 0.0998
+              "prob": 0.0989
             }
           ],
           "confidence": 1,
@@ -1777,7 +1777,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2464,
+          "probability": 0.2497,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -1791,7 +1791,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -1938,7 +1938,7 @@
       "date": "2026-06-13",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2085,7 +2085,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2232,7 +2232,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2379,7 +2379,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2526,7 +2526,7 @@
       "date": "2026-06-24",
       "round": "group",
       "group": "C",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2673,7 +2673,7 @@
       "date": "2026-06-12",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2681,47 +2681,47 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.51,
-        "away": 0.86
+        "home": 1.61,
+        "away": 0.76
       },
       "totalGoalsExpected": 2.37,
       "probabilities": {
-        "homeWin": 0.5262,
-        "draw": 0.2604,
-        "awayWin": 0.2134,
+        "homeWin": 0.576,
+        "draw": 0.2483,
+        "awayWin": 0.1757,
         "over25": 0.421,
         "under25": 0.579
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1419
-        },
-        {
-          "score": "1:1",
-          "prob": 0.1212
+          "prob": 0.151
         },
         {
           "score": "2:0",
-          "prob": 0.107
+          "prob": 0.1212
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1144
         },
         {
           "score": "0:0",
-          "prob": 0.0938
+          "prob": 0.0939
         },
         {
           "score": "2:1",
-          "prob": 0.0916
+          "prob": 0.092
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
-        "compositeHome": 54,
+        "compositeHome": 55,
         "compositeAway": 41,
-        "eloHome": 1835,
-        "eloAway": 1790,
-        "lambdaHome": 1.509,
-        "lambdaAway": 0.856,
+        "eloHome": 1854,
+        "eloAway": 1771,
+        "lambdaHome": 1.606,
+        "lambdaAway": 0.759,
         "h2hAvailable": true,
         "h2hMatches": 5,
         "paramsUsed": {
@@ -2744,32 +2744,32 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.3167,
-        "平/主": 0.1816,
-        "平/平": 0.1747,
-        "客/客": 0.1174,
-        "平/客": 0.0873,
-        "主/平": 0.0452,
-        "客/平": 0.045,
-        "客/主": 0.021,
-        "主/客": 0.011
+        "主/主": 0.3535,
+        "平/主": 0.1949,
+        "平/平": 0.1696,
+        "客/客": 0.0949,
+        "平/客": 0.0736,
+        "主/平": 0.0418,
+        "客/平": 0.0416,
+        "客/主": 0.0211,
+        "主/客": 0.0089
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "美国胜",
-          "probability": 0.5262,
-          "confidence": 4,
+          "probability": 0.576,
+          "confidence": 5,
           "riskLevel": "稳健",
-          "recommendation": "可考虑"
+          "recommendation": "重点推荐"
         },
         "handicap": {
           "market": "让球胜平负",
-          "pick": "主队-0/0.5",
-          "pickLabel": "主队-0/0.5",
-          "probability": 0.5262,
-          "confidence": 4,
+          "pick": "主队-0.5",
+          "pickLabel": "主队-0.5",
+          "probability": 0.576,
+          "confidence": 5,
           "riskLevel": "稳健",
           "recommendation": "可考虑"
         },
@@ -2787,15 +2787,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1419
-            },
-            {
-              "score": "1:1",
-              "prob": 0.1212
+              "prob": 0.151
             },
             {
               "score": "2:0",
-              "prob": 0.107
+              "prob": 0.1212
+            },
+            {
+              "score": "1:1",
+              "prob": 0.1144
             }
           ],
           "confidence": 1,
@@ -2806,8 +2806,8 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.3167,
-          "confidence": 2,
+          "probability": 0.3535,
+          "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
         }
@@ -2820,7 +2820,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2967,7 +2967,7 @@
       "date": "2026-06-19",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -2975,29 +2975,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.27,
-        "away": 1.07
+        "home": 1.32,
+        "away": 1.02
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.4103,
-        "draw": 0.2784,
-        "awayWin": 0.3113,
+        "homeWin": 0.4342,
+        "draw": 0.2763,
+        "awayWin": 0.2895,
         "over25": 0.4158,
         "under25": 0.5842
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1307
+          "prob": 0.1295
         },
         {
           "score": "1:0",
-          "prob": 0.1222
+          "prob": 0.1267
         },
         {
           "score": "0:1",
-          "prob": 0.1028
+          "prob": 0.0983
         },
         {
           "score": "0:0",
@@ -3005,17 +3005,17 @@
         },
         {
           "score": "2:1",
-          "prob": 0.0833
+          "prob": 0.0856
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
         "compositeHome": 55,
         "compositeAway": 42,
-        "eloHome": 1835,
+        "eloHome": 1854,
         "eloAway": 1785,
-        "lambdaHome": 1.274,
-        "lambdaAway": 1.071,
+        "lambdaHome": 1.321,
+        "lambdaAway": 1.024,
         "h2hAvailable": true,
         "h2hMatches": 3,
         "paramsUsed": {
@@ -3038,31 +3038,31 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2378,
-        "平/平": 0.1839,
-        "客/客": 0.1759,
-        "平/主": 0.1499,
-        "平/客": 0.1199,
-        "主/平": 0.0493,
-        "客/平": 0.0493,
-        "客/主": 0.0187,
-        "主/客": 0.0153
+        "主/主": 0.2548,
+        "平/平": 0.1831,
+        "客/客": 0.1612,
+        "平/主": 0.1574,
+        "平/客": 0.1125,
+        "主/平": 0.0488,
+        "客/平": 0.0485,
+        "客/主": 0.0192,
+        "主/客": 0.0144
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "美国胜",
-          "probability": 0.4103,
+          "probability": 0.4342,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
         },
         "handicap": {
           "market": "让球胜平负",
-          "pick": "平手",
-          "pickLabel": "平手",
-          "probability": 0.4103,
+          "pick": "主队-0/0.5",
+          "pickLabel": "主队-0/0.5",
+          "probability": 0.4342,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3081,15 +3081,15 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1307
+              "prob": 0.1295
             },
             {
               "score": "1:0",
-              "prob": 0.1222
+              "prob": 0.1267
             },
             {
               "score": "0:1",
-              "prob": 0.1028
+              "prob": 0.0983
             }
           ],
           "confidence": 1,
@@ -3100,7 +3100,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2378,
+          "probability": 0.2548,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3114,7 +3114,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3122,37 +3122,37 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.28,
-        "away": 0.82
+        "home": 1.31,
+        "away": 0.78
       },
       "totalGoalsExpected": 2.09,
       "probabilities": {
-        "homeWin": 0.4712,
-        "draw": 0.2893,
-        "awayWin": 0.2395,
+        "homeWin": 0.4923,
+        "draw": 0.2855,
+        "awayWin": 0.2222,
         "over25": 0.349,
         "under25": 0.651
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1571
+          "prob": 0.1619
         },
         {
           "score": "1:1",
-          "prob": 0.1285
+          "prob": 0.1262
         },
         {
           "score": "0:0",
-          "prob": 0.1229
-        },
-        {
-          "score": "0:1",
-          "prob": 0.101
+          "prob": 0.123
         },
         {
           "score": "2:0",
-          "prob": 0.1001
+          "prob": 0.1063
+        },
+        {
+          "score": "0:1",
+          "prob": 0.0963
         }
       ],
       "dixonColesRho": 0.001,
@@ -3160,9 +3160,9 @@
         "compositeHome": 61,
         "compositeAway": 36,
         "eloHome": 1890,
-        "eloAway": 1790,
-        "lambdaHome": 1.275,
-        "lambdaAway": 0.82,
+        "eloAway": 1771,
+        "lambdaHome": 1.314,
+        "lambdaAway": 0.781,
         "h2hAvailable": true,
         "h2hMatches": 2,
         "paramsUsed": {
@@ -3185,22 +3185,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2762,
-        "平/平": 0.2038,
-        "平/主": 0.175,
-        "客/客": 0.1298,
-        "平/客": 0.0992,
-        "主/平": 0.0441,
-        "客/平": 0.0441,
-        "客/主": 0.0173,
-        "主/客": 0.0104
+        "主/主": 0.2889,
+        "平/平": 0.2034,
+        "平/主": 0.1809,
+        "客/客": 0.1202,
+        "平/客": 0.0935,
+        "客/平": 0.043,
+        "主/平": 0.043,
+        "客/主": 0.0174,
+        "主/客": 0.0096
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "土耳其胜",
-          "probability": 0.4712,
+          "probability": 0.4923,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3209,7 +3209,7 @@
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.4712,
+          "probability": 0.4923,
           "confidence": 3,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3228,15 +3228,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1571
+              "prob": 0.1619
             },
             {
               "score": "1:1",
-              "prob": 0.1285
+              "prob": 0.1262
             },
             {
               "score": "0:0",
-              "prob": 0.1229
+              "prob": 0.123
             }
           ],
           "confidence": 1,
@@ -3247,7 +3247,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2762,
+          "probability": 0.2889,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3261,7 +3261,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3269,33 +3269,33 @@
         "away": 0
       },
       "expectedGoals": {
-        "home": 1.54,
-        "away": 0.91
+        "home": 1.49,
+        "away": 0.96
       },
       "totalGoalsExpected": 2.44,
       "probabilities": {
-        "homeWin": 0.5195,
-        "draw": 0.2571,
-        "awayWin": 0.2234,
+        "homeWin": 0.4942,
+        "draw": 0.2618,
+        "awayWin": 0.244,
         "over25": 0.4419,
         "under25": 0.5581
       },
       "topScores": [
         {
           "score": "1:0",
-          "prob": 0.1333
+          "prob": 0.129
         },
         {
           "score": "1:1",
-          "prob": 0.121
+          "prob": 0.1235
         },
         {
           "score": "2:0",
-          "prob": 0.1023
+          "prob": 0.0957
         },
         {
           "score": "2:1",
-          "prob": 0.093
+          "prob": 0.0918
         },
         {
           "score": "0:0",
@@ -3307,9 +3307,9 @@
         "compositeHome": 50,
         "compositeAway": 55,
         "eloHome": 1890,
-        "eloAway": 1835,
-        "lambdaHome": 1.536,
-        "lambdaAway": 0.909,
+        "eloAway": 1854,
+        "lambdaHome": 1.486,
+        "lambdaAway": 0.959,
         "h2hAvailable": true,
         "h2hMatches": 3,
         "paramsUsed": {
@@ -3332,33 +3332,33 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.3144,
-        "平/主": 0.178,
-        "平/平": 0.1689,
-        "客/客": 0.1229,
-        "平/客": 0.0893,
-        "主/平": 0.0465,
-        "客/平": 0.0462,
-        "客/主": 0.0218,
-        "主/客": 0.012
+        "主/主": 0.2964,
+        "平/主": 0.1711,
+        "平/平": 0.1707,
+        "客/客": 0.1356,
+        "平/客": 0.0961,
+        "主/平": 0.0477,
+        "客/平": 0.0477,
+        "客/主": 0.0216,
+        "主/客": 0.013
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "土耳其胜",
-          "probability": 0.5195,
-          "confidence": 4,
-          "riskLevel": "稳健",
+          "probability": 0.4942,
+          "confidence": 3,
+          "riskLevel": "进取",
           "recommendation": "可考虑"
         },
         "handicap": {
           "market": "让球胜平负",
           "pick": "主队-0/0.5",
           "pickLabel": "主队-0/0.5",
-          "probability": 0.5195,
-          "confidence": 4,
-          "riskLevel": "稳健",
+          "probability": 0.4942,
+          "confidence": 3,
+          "riskLevel": "进取",
           "recommendation": "可考虑"
         },
         "overUnder": {
@@ -3375,15 +3375,15 @@
           "picks": [
             {
               "score": "1:0",
-              "prob": 0.1333
+              "prob": 0.129
             },
             {
               "score": "1:1",
-              "prob": 0.121
+              "prob": 0.1235
             },
             {
               "score": "2:0",
-              "prob": 0.1023
+              "prob": 0.0957
             }
           ],
           "confidence": 1,
@@ -3394,8 +3394,8 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.3144,
-          "confidence": 2,
+          "probability": 0.2964,
+          "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
         }
@@ -3408,7 +3408,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "D",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3416,29 +3416,29 @@
         "away": 1
       },
       "expectedGoals": {
-        "home": 1.24,
-        "away": 1.11
+        "home": 1.19,
+        "away": 1.16
       },
       "totalGoalsExpected": 2.35,
       "probabilities": {
-        "homeWin": 0.3923,
-        "draw": 0.2791,
-        "awayWin": 0.3286,
+        "homeWin": 0.3661,
+        "draw": 0.2798,
+        "awayWin": 0.3541,
         "over25": 0.4171,
         "under25": 0.5829
       },
       "topScores": [
         {
           "score": "1:1",
-          "prob": 0.1311
+          "prob": 0.1315
         },
         {
           "score": "1:0",
-          "prob": 0.1184
+          "prob": 0.1134
         },
         {
           "score": "0:1",
-          "prob": 0.106
+          "prob": 0.111
         },
         {
           "score": "0:0",
@@ -3446,17 +3446,17 @@
         },
         {
           "score": "2:1",
-          "prob": 0.0814
+          "prob": 0.0782
         }
       ],
       "dixonColesRho": 0.001,
       "inputs": {
-        "compositeHome": 44,
+        "compositeHome": 43,
         "compositeAway": 45,
-        "eloHome": 1790,
+        "eloHome": 1771,
         "eloAway": 1785,
-        "lambdaHome": 1.24,
-        "lambdaAway": 1.11,
+        "lambdaHome": 1.187,
+        "lambdaAway": 1.163,
         "h2hAvailable": false,
         "h2hMatches": 0,
         "paramsUsed": {
@@ -3479,22 +3479,22 @@
       "correct": null,
       "accuracy": null,
       "htftProb": {
-        "主/主": 0.2267,
-        "客/客": 0.1865,
-        "平/平": 0.1834,
-        "平/主": 0.1445,
-        "平/客": 0.125,
-        "主/平": 0.0497,
-        "客/平": 0.0497,
-        "客/主": 0.0183,
-        "主/客": 0.0161
+        "主/主": 0.2109,
+        "客/客": 0.2016,
+        "平/平": 0.1837,
+        "平/主": 0.137,
+        "平/客": 0.1325,
+        "主/平": 0.0499,
+        "客/平": 0.0499,
+        "客/主": 0.0175,
+        "主/客": 0.017
       },
       "bettingRecommendations": {
         "winDrawLoss": {
           "market": "胜平负",
           "pick": "主胜",
           "pickLabel": "巴拉圭胜",
-          "probability": 0.3923,
+          "probability": 0.3661,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3503,7 +3503,7 @@
           "market": "让球胜平负",
           "pick": "平手",
           "pickLabel": "平手",
-          "probability": 0.3923,
+          "probability": 0.3661,
           "confidence": 2,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3522,15 +3522,15 @@
           "picks": [
             {
               "score": "1:1",
-              "prob": 0.1311
+              "prob": 0.1315
             },
             {
               "score": "1:0",
-              "prob": 0.1184
+              "prob": 0.1134
             },
             {
               "score": "0:1",
-              "prob": 0.106
+              "prob": 0.111
             }
           ],
           "confidence": 1,
@@ -3541,7 +3541,7 @@
           "market": "半全场",
           "pick": "主/主",
           "pickLabel": "主/主",
-          "probability": 0.2267,
+          "probability": 0.2109,
           "confidence": 1,
           "riskLevel": "进取",
           "recommendation": "可考虑"
@@ -3555,7 +3555,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3702,7 +3702,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3849,7 +3849,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -3996,7 +3996,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4143,7 +4143,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4290,7 +4290,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "E",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4437,7 +4437,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4584,7 +4584,7 @@
       "date": "2026-06-14",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4731,7 +4731,7 @@
       "date": "2026-06-20",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -4878,7 +4878,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5025,7 +5025,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5172,7 +5172,7 @@
       "date": "2026-06-25",
       "round": "group",
       "group": "F",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5319,7 +5319,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5466,7 +5466,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5613,7 +5613,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5760,7 +5760,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -5907,7 +5907,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6054,7 +6054,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "G",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6201,7 +6201,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6348,7 +6348,7 @@
       "date": "2026-06-15",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6495,7 +6495,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6642,7 +6642,7 @@
       "date": "2026-06-21",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6789,7 +6789,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -6936,7 +6936,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "H",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7083,7 +7083,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7230,7 +7230,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7377,7 +7377,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7524,7 +7524,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7671,7 +7671,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7818,7 +7818,7 @@
       "date": "2026-06-26",
       "round": "group",
       "group": "I",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -7965,7 +7965,7 @@
       "date": "2026-06-16",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8112,7 +8112,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8259,7 +8259,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8406,7 +8406,7 @@
       "date": "2026-06-22",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8553,7 +8553,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8700,7 +8700,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "J",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8847,7 +8847,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -8994,7 +8994,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9141,7 +9141,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9288,7 +9288,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9435,7 +9435,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9582,7 +9582,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "K",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9729,7 +9729,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -9876,7 +9876,7 @@
       "date": "2026-06-17",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -10023,7 +10023,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -10170,7 +10170,7 @@
       "date": "2026-06-23",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -10317,7 +10317,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -10464,7 +10464,7 @@
       "date": "2026-06-27",
       "round": "group",
       "group": "L",
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "predicted",
       "modelVersion": "3.0-dixon-coles",
       "predictedScore": {
@@ -10611,7 +10611,7 @@
       "date": "2026-06-28",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10633,7 +10633,7 @@
       "date": "2026-06-28",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10655,7 +10655,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10677,7 +10677,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10699,7 +10699,7 @@
       "date": "2026-06-29",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10721,7 +10721,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10743,7 +10743,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10765,7 +10765,7 @@
       "date": "2026-06-30",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10787,7 +10787,7 @@
       "date": "2026-07-01",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10809,7 +10809,7 @@
       "date": "2026-07-01",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10831,7 +10831,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10853,7 +10853,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10875,7 +10875,7 @@
       "date": "2026-07-02",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10897,7 +10897,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10919,7 +10919,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10941,7 +10941,7 @@
       "date": "2026-07-03",
       "round": "round32",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10963,7 +10963,7 @@
       "date": "2026-07-04",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -10985,7 +10985,7 @@
       "date": "2026-07-04",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11007,7 +11007,7 @@
       "date": "2026-07-05",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11029,7 +11029,7 @@
       "date": "2026-07-05",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11051,7 +11051,7 @@
       "date": "2026-07-06",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11073,7 +11073,7 @@
       "date": "2026-07-06",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11095,7 +11095,7 @@
       "date": "2026-07-07",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11117,7 +11117,7 @@
       "date": "2026-07-07",
       "round": "round16",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11139,7 +11139,7 @@
       "date": "2026-07-09",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11161,7 +11161,7 @@
       "date": "2026-07-10",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11183,7 +11183,7 @@
       "date": "2026-07-11",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11205,7 +11205,7 @@
       "date": "2026-07-11",
       "round": "quarter",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11227,7 +11227,7 @@
       "date": "2026-07-14",
       "round": "semi",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11249,7 +11249,7 @@
       "date": "2026-07-15",
       "round": "semi",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11271,7 +11271,7 @@
       "date": "2026-07-18",
       "round": "bronze",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
@@ -11293,7 +11293,7 @@
       "date": "2026-07-19",
       "round": "final",
       "group": null,
-      "generatedAt": "2026-06-12",
+      "generatedAt": "2026-06-13",
       "status": "pending_qualification",
       "predictedScore": null,
       "expectedGoals": null,
